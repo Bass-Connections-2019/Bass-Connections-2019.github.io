@@ -6,7 +6,7 @@
 }
 @media only screen and (max-width: 1440px) {
 	.welcome-title {
-		font-size: 100px;
+		font-size: 50px;
 		margin-bottom:20px;
 	}
 	.next-section {
@@ -85,7 +85,7 @@
 		margin-right:0;
 	}
 	.welcome-title {
-		font-size:50px;
+		font-size:30px;
 	}
 	.welcome-title:after {
 		margin-top:15px;
