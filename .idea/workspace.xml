@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+            <state relative-caret-position="75">
+              <caret line="99" column="82" selection-start-line="99" selection-start-column="82" selection-end-line="99" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -45,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1664" />
     <option name="y" value="24" />
     <option name="width" value="1583" />
@@ -74,6 +74,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586026569117" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -99,16 +100,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586025857255</updated>
-      <workItem from="1586025862147" duration="484000" />
+      <workItem from="1586025862147" duration="1170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484000" />
+    <option name="totallyTimeSpent" value="1170000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1664" y="24" width="1583" height="868" extended-state="0" />
-    <editor active="true" />
+    <frame x="1664" y="24" width="1583" height="868" extended-state="1" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -150,8 +150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+        <state relative-caret-position="75">
+          <caret line="99" column="82" selection-start-line="99" selection-start-column="82" selection-end-line="99" selection-end-column="82" />
         </state>
       </provider>
     </entry>
