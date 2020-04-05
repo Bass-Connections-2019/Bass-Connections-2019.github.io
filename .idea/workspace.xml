@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618d812b-ab26-4f53-90dc-49a00beb6b3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/previous_work_3ply.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="99" column="82" selection-start-line="99" selection-start-column="82" selection-end-line="99" selection-end-column="82" />
+            <state relative-caret-position="294">
+              <caret line="130" column="297" selection-start-line="130" selection-start-column="297" selection-end-line="130" selection-end-column="297" />
             </state>
           </provider>
         </entry>
@@ -45,11 +47,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1664" />
-    <option name="y" value="24" />
-    <option name="width" value="1583" />
-    <option name="height" value="868" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1843" />
+    <option name="y" value="-32" />
+    <option name="width" value="1346" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -63,6 +65,11 @@
               <item name="Bass-Connections-2019.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bass-Connections-2019.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Bass-Connections-2019.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bass-Connections-2019.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -74,9 +81,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586026569117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586122011548" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -100,27 +112,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586025857255</updated>
-      <workItem from="1586025862147" duration="1170000" />
+      <workItem from="1586025862147" duration="2910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1170000" />
+    <option name="totallyTimeSpent" value="2910000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1664" y="24" width="1583" height="868" extended-state="1" />
+    <frame x="1843" y="-32" width="1346" height="957" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14990266" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17714724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.29595375" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -150,8 +163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="99" column="82" selection-start-line="99" selection-start-column="82" selection-end-line="99" selection-end-column="82" />
+        <state relative-caret-position="294">
+          <caret line="130" column="297" selection-start-line="130" selection-start-column="297" selection-end-line="130" selection-end-column="297" />
         </state>
       </provider>
     </entry>
