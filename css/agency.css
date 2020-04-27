@@ -25,6 +25,14 @@ a:hover {
   color: #fed136 !important;
 }
 
+.text-green {
+  color: #298b0b;
+}
+
+.text-blue {
+  color: #2060eb;
+}
+
 h1,
 h2,
 h3,

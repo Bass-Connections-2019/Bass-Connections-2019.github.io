@@ -17,7 +17,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
@@ -31,7 +32,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">A Wider Lens on Energy</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
@@ -41,7 +44,7 @@
             <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#segmentation">Image Segmentation</a>
+            <a class="nav-link js-scroll-trigger" href="#project-background">Project Background</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#roof-extraction">Roof Extraction</a>
@@ -65,9 +68,12 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">2019 Duke Bass Connections</div>
-        <div class="intro-heading text-uppercase">Adapting Deep Learning Techniques to Inform Energy Access Decisions</div>
-        <p class="text-white-75 font-weight-light mb-5">Aneesh Gupta, Ayooluwa Balogun, Gaurav Uppal, Jason Wang, Norah Tan, Scott Heng On, Winston Yau, Vivek Sahukar</p>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#introduction">A Duke Energy Analytics Lab Project</a>
+        <div class="intro-heading text-uppercase">Adapting Deep Learning Techniques to Inform Energy Access Decisions
+        </div>
+        <p class="text-white-75 font-weight-light mb-5">Aneesh Gupta, Ayooluwa Balogun, Gaurav Uppal, Jason Wang, Norah
+          Tan, Scott Heng On, Winston Yau, Vivek Sahukar</p>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#introduction">A Duke Energy Analytics
+          Lab Project</a>
       </div>
     </div>
   </header>
@@ -76,177 +82,219 @@
   <!-- Introduction section-->
   <section class="page-section" id="introduction">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Introduction</h2>
-                <h3 class="section-subheading text-muted">&#8226 Project Background. &nbsp &#8226 Our Goal. &nbsp &#8226 Previous Progress. </h3>
-                <hr class="divider light my-4"/>
-                <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Project Background</h3>
-                    <p class="text-muted">Access to electricity is one of the most important requisites to economic and societal development. It is associated with decreased maternal mortality, increased education levels, and decreased poverty <a href="https://nature.berkeley.edu/er100/readings/nclimate2512.pdf" target="_blank">[1]</a>.  However, 1 billion people still lack access to electricity. To enable electrification and grid expansion in energy-poor regions, it is crucial to know where the existing infrastructure is. This information can help policymakers and businesses decide on whether to expand the national grid, build a microgrid, or provide direct off-grid solar PV. Current approaches to identifying and mapping energy infrastructure tend to be expensive and time-intensive, consisting of aggregating survey data from the ground level and roughly scaling it across regions. This is where we want to help.</p>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <img src="img/about/intro_picture.png" class="img-responsive" alt="" style="width:100%">
-                    <caption><i>Figure 1: Electrification around the globe</i></caption>
-                  </div>
-                </div>
-                <hr class="divider light my-4"/>
-                
-                <div class="row">                 
-                  <div class="col-md-6 my-auto">                   
-                    <h3 class="service-heading">Our Goal</h3>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">Our goal as a team is to be able to build a tool that researchers can use to identify and map out worldwide energy infrastructure to supplement ground truth information and allow energy developers and policymakers to make more informed grid expansion decisions.</p>
-                  </div>
-                </div>  
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Introduction</h2>
+          <!-- <h3 class="section-subheading text-muted">&#8226 Project Background. &nbsp &#8226 Our Goal. &nbsp &#8226 -->
+            <!-- Previous Progress. </h3> -->
+          <hr class="divider light my-4" />
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Motivation</h3>
+              <p class="text-muted">Access to electricity is one of the most important requisites to economic and
+                societal development. It is associated with decreased maternal mortality, increased education levels,
+                and decreased poverty <a href="https://nature.berkeley.edu/er100/readings/nclimate2512.pdf"
+                  target="_blank">[1]</a>. However, 1 billion people still lack access to electricity. To enable
+                electrification and grid expansion in energy-poor regions, it is crucial to know where the existing
+                infrastructure is. This information can help policymakers and businesses decide on whether to expand the
+                national grid, build a microgrid, or provide direct off-grid solar PV. Current approaches to identifying
+                and mapping energy infrastructure tend to be expensive and time-intensive, consisting of aggregating
+                survey data from the ground level and roughly scaling it across regions. This is where we want to help.
+              </p>
             </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/about/intro_picture.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 1: Electrification around the globe</i></caption>
+            </div>
+          </div>
+          <hr class="divider light my-4" />
+          <div class="row justify-content-center">
+            <h2 class="section-heading text-uppercase">Our Goal</h2>
+          </div>
+          <div class="row">
+            <h4 class="text-muted">Our goal as a team is to be able to <span class="text-danger">build a tool</span>
+              that researchers can use to <span style="color : #9b0ebe">identify and map out worldwide energy
+                infrastructure</span> to supplement ground truth information and allow energy developers and
+              policymakers to<span style="color : #1d5ed8"> make informed decisions</span> on grid expansion.</p>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
+
 
   <!-- Image Segmentation section-->
-  <section class="page-section" id="segmentation">
+  <section class="page-section" id="project-background">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Image Segmentation</h2>
-                <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
-                
-                
-                <hr class="divider light my-4"/>
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Project Background</h2>
+          <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
+            &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
 
-                <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Previous Progress</h3>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">Previous Bass Connections teams have worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Existing methodology is to use convolutional neural networks, a kind of deep learning model, to identify energy infrastructure in satellite images. The 2019 research group was able to create an object identification model that can identify different types of city infrastructure, as shown here:</p>
-                  </div>
-                  
 
-                  <div class="row text-center">
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <!-- <i class="fas fa-stack-2x text-primary"></i> -->
-                        <img src="img/intro/1_step.png" class="img-responsive" alt="" style="width:60%">
-                        <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
-                      </span>
-                      <h4 class="service-heading">1. Obtain High-Resolution Satellite Imagery</h4>
-                      <p class="text-muted">The high-resolution satellite imagery displays various infrastructure such as building, car, tower clearly and visibly. Using Low resolution images won’t give higher prediction accuracy.</p>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <img src="img/intro/2_step.png" class="img-responsive" alt="" style="width:60%">
-                      </span>
-                      <h4 class="service-heading">2. Performing Object Detection</h4>
-                      <p class="text-muted">We use the model to  detect different objects in the training dataset such as energy infrastructure such as transmission lines and towers in addition to cars, buildings too. The identified objects are bounded by blue boxes.</p>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <img src="img/intro/3_step.png" class="img-responsive" alt="" style="width:60%">
-                      </span>
-                      <h4 class="service-heading">3. Identifying Energy Infrastructure</h4>
-                      <p class="text-muted">Finally, the model is tested on new images, where each identified object (bounded by red boxes) was assigned a probability score of belonging to a certain class.</p>
-                    </div>
-                
-                  </div>
-                  
-                  <!-- <div class="col-md-8 my-auto">
+          <hr class="divider light my-4" />
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Previous Progress</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">Previous Bass Connections teams have worked on developing deep learning models that
+                identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid
+                policymakers in implementing effective electrification strategies. Existing methodology is to use
+                convolutional neural networks, a kind of deep learning model, to identify energy infrastructure in
+                satellite images. The 2019 research group was able to create an object identification model that can
+                identify different types of city infrastructure, as shown here:</p>
+            </div>
+
+
+            <div class="row text-center">
+              <div class="col-md-4">
+                <span class="fa-stack fa-9x">
+                  <!-- <i class="fas fa-stack-2x text-primary"></i> -->
+                  <img src="img/intro/1_step.png" class="img-responsive" alt="" style="width:60%">
+                  <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+                </span>
+                <h4 class="service-heading">1. Obtain High-Resolution Satellite Imagery</h4>
+                <p class="text-muted">The high-resolution satellite imagery displays various infrastructure such as
+                  building, car, tower clearly and visibly. Using Low resolution images won’t give higher prediction
+                  accuracy.</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa-stack fa-9x">
+                  <img src="img/intro/2_step.png" class="img-responsive" alt="" style="width:60%">
+                </span>
+                <h4 class="service-heading">2. Performing Object Detection</h4>
+                <p class="text-muted">We use the model to detect different objects in the training dataset such as
+                  energy infrastructure such as transmission lines and towers in addition to cars, buildings too. The
+                  identified objects are bounded by blue boxes.</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa-stack fa-9x">
+                  <img src="img/intro/3_step.png" class="img-responsive" alt="" style="width:60%">
+                </span>
+                <h4 class="service-heading">3. Identifying Energy Infrastructure</h4>
+                <p class="text-muted">Finally, the model is tested on new images, where each identified object (bounded
+                  by red boxes) was assigned a probability score of belonging to a certain class.</p>
+              </div>
+
+            </div>
+
+            <!-- <div class="col-md-8 my-auto">
                     <img src="img/3domains.png" class="img-responsive" alt="" style="width:100%">
                   </div>
                   <div class="col-md-4 my-auto">
                     <p class="text-muted">However, their models have shown bad adaptation with respect to different geographic domains. Challenges associated with satellite imagery with different geographies: (from left) Vienna, Tyrol, Austin, Chicago. Figures are from the INRIA dataset. 
                       </p>
                   </div> -->
-                </div>
+          </div>
 
-                <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
-                <div class="row">
-                  
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Our Project Goal is to Increase Adaptability Across Geographies</h3>
-                  </div>
+          <div class="row">
 
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">We are building on last year team’s work and our main goal this year has been to make our model generalize across different geographies. <strong>Image Segmentation</strong> is a deep learning model which can segment images and identify target objects at scale by assigning each pixel to a probability. Satellite imagery can thus be simplified into analyzable structural maps and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong>, an encoder-decoder model to perform the segmentation. To scope into the problem of cross-geographical adaptation, we trained and tested the MRS2 model using a geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different cities across the world.</p></div>
-                  </div>
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Our Project Goal is to Increase Adaptability Across Geographies</h3>
+            </div>
 
-                  <div class="row text-center">
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <!-- <i class="fas fa-stack-2x text-primary"></i> -->
-                        <img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:60%">
-                        <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
-                      </span>
-                      <h4 class="service-heading">1. Input Labelled Satellite Image</h4>
-                      <p class="text-muted">Labelled satellite image where each object is identified in the training dataset
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <img src="img/intro/22_step.png" class="img-responsive" alt="" style="width:60%">
-                      </span>
-                      <h4 class="service-heading">2. Apply Layered Neural Network</h4>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="fa-stack fa-9x">
-                        <img src="img/intro/33_step.png" class="img-responsive" alt="" style="width:60%">
-                      </span>
-                      <h4 class="service-heading">3. Output Segmented Image</h4>
-                      <p class="text-muted">In the segmented image, the white pixels are the object of interest (such as building) that the model has identified and the black pixels are the area which are not of interest to us</p>
-                    </div>
-                  
-                  
-                </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
+                make our model generalize across different geographies. <strong>Image Segmentation</strong> is a deep
+                learning model which can segment images and identify target objects at scale by assigning each pixel to
+                a probability. Satellite imagery can thus be simplified into analyzable structural maps and offer
+                insights on the model's generalizability across different geographic domains. We chose <strong>Models
+                  for Remote Sensing (MRS)</strong>, an encoder-decoder model to perform the segmentation. To scope into
+                the problem of cross-geographical adaptation, we trained and tested the MRS2 model using a
+                geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different
+                cities across the world.</p>
+            </div>
+          </div>
 
-                <hr class="divider light my-4"/>
-                <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Deep Learning Model Accuracy Metrics</h3>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <img src="img/intro/accuracy_metric.png" class="img-responsive" alt="" style="width:100%">
-                    <p class="text-muted">The output of the model is the predicted bounding boxes around the object of interest. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
-                      <ul class="text-muted">
-                        <li>The ground-truth bounding boxes (i.e., the hand labeled bounding boxes from the testing set that specify where in the image our object is).</li>
-                        <li>The predicted bounding boxes from our model.</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-
-                <hr class="divider light my-4"/>
-                <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Current Model Generalizes Poorly Across Geographies</h3>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
-                    <p class="text-muted">We are building on last year team’s work and our main goal this year has been to make our model generalize across different geographies. In order to achieve that we need:</p>
-                  </div>
-                </div>
-
-                <hr class="divider light my-4"/>
-
-                <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <h3 class="service-heading">Cross-Domain Accuracy</h3>
-                    <p class="text-muted">As shown in the table, the most accurate model for a given city is the model that is trained on that same city, and models trained on a single city don’t necessarily generalize well to the other cities. Furthermore, we found that training a model on all of the cities results in higher test accuracies across the board.
-                      To address this problem of transferring learning across geographic domains we want to:
-                      Visualize the model’s representation of the current training domain(Goal 2).
-                      Provide ways to diversify this training domain (Goal 3).</p>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <img src="img/accuracy_table.png" class="img-responsive" alt="" style="width:100%">
-                    <caption><i>Table: Evaluation of models trained on each individual city from the Inria dataset, as well as a model trained on the entire dataset. The models are then evaluated on each city (columns), and results are measured in IoU (Intersection over Union). Orange cells represent the best model for each city, while green cells represent best performance out of all models.</i></caption>
-                  </div>
-                </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <span class="fa-stack fa-9x">
+                <!-- <i class="fas fa-stack-2x text-primary"></i> -->
+                <img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:60%">
+                <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+              </span>
+              <h4 class="service-heading">1. Input Labelled Satellite Image</h4>
+              <p class="text-muted">Labelled satellite image where each object is identified in the training dataset
+              </p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-9x">
+                <img src="img/intro/22_step.png" class="img-responsive" alt="" style="width:60%">
+              </span>
+              <h4 class="service-heading">2. Apply Layered Neural Network</h4>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-9x">
+                <img src="img/intro/33_step.png" class="img-responsive" alt="" style="width:60%">
+              </span>
+              <h4 class="service-heading">3. Output Segmented Image</h4>
+              <p class="text-muted">In the segmented image, the white pixels are the object of interest (such as
+                building) that the model has identified and the black pixels are the area which are not of interest to
+                us</p>
+            </div>
 
 
-                <!-- <div class="col-md-8 my-auto">
+          </div>
+
+          <hr class="divider light my-4" />
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Deep Learning Model Accuracy Metrics</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/intro/accuracy_metric.png" class="img-responsive" alt="" style="width:100%">
+              <p class="text-muted">The output of the model is the predicted bounding boxes around the object of
+                interest. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
+                <ul class="text-muted">
+                  <li>The ground-truth bounding boxes (i.e., the hand labeled bounding boxes from the testing set that
+                    specify where in the image our object is).</li>
+                  <li>The predicted bounding boxes from our model.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <hr class="divider light my-4" />
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Current Model Generalizes Poorly Across Geographies</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
+              <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
+                make our model generalize across different geographies. In order to achieve that we need:</p>
+            </div>
+          </div>
+
+          <hr class="divider light my-4" />
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Cross-Domain Accuracy</h3>
+              <p class="text-muted">As shown in the table, the most accurate model for a given city is the model that is
+                trained on that same city, and models trained on a single city don’t necessarily generalize well to the
+                other cities. Furthermore, we found that training a model on all of the cities results in higher test
+                accuracies across the board.
+                To address this problem of transferring learning across geographic domains we want to:
+                Visualize the model’s representation of the current training domain(Goal 2).
+                Provide ways to diversify this training domain (Goal 3).</p>
+            </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/accuracy_table.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Table: Evaluation of models trained on each individual city from the Inria dataset, as well as
+                  a model trained on the entire dataset. The models are then evaluated on each city (columns), and
+                  results are measured in IoU (Intersection over Union). Orange cells represent the best model for each
+                  city, while green cells represent best performance out of all models.</i></caption>
+            </div>
+          </div>
+
+
+          <!-- <div class="col-md-8 my-auto">
                     <img src="img/3domains.png" class="img-responsive" alt="" style="width:100%">
                   </div>
                   <div class="col-md-4 my-auto">
@@ -255,24 +303,27 @@
                   </div> -->
 
 
-               
 
 
-                <hr class="divider light my-4"/>
-                <div class="row">
-                  <div class="col-md-8 my-auto">
-                    <img src="img/4_domains.png" class="img-responsive" alt="" style="width:100%">
-                  </div>
-                  <div class="col-md-4 my-auto">
-                    <h3 class="service-heading">Each Geography is Incredibly Different</h3>
-                    <p class="text-muted">The input satellite image from the Inria dataset is fed through the CNN to give an output segmented image. We are extracting feature visualizations from the second to last layer of the model and using those visualizations to evaluate the segmentation capability of our model, adding synthetic imagery as needed.</p>
-                  </div>
-                </div>
-                <!-- <hr class="divider light my-4"/> -->
 
-                
-                <!-- <hr class="divider light my-4"/> -->
-                <!-- <h3 class="service-heading">Features Visualization through T-SNE</h3>
+          <hr class="divider light my-4" />
+          <div class="row">
+            <div class="col-md-8 my-auto">
+              <img src="img/4_domains.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            <div class="col-md-4 my-auto">
+              <h3 class="service-heading">Each Geography is Incredibly Different</h3>
+              <p class="text-muted">The input satellite image from the Inria dataset is fed through the CNN to give an
+                output segmented image. We are extracting feature visualizations from the second to last layer of the
+                model and using those visualizations to evaluate the segmentation capability of our model, adding
+                synthetic imagery as needed.</p>
+            </div>
+          </div>
+          <!-- <hr class="divider light my-4"/> -->
+
+
+          <!-- <hr class="divider light my-4"/> -->
+          <!-- <h3 class="service-heading">Features Visualization through T-SNE</h3>
                 <div class="row">
                 <div class="col-md-5 my-auto">
                   <p class="text-muted">Feature visualization is the process of visualizing how a decision system ‘interprets’ images. A robust recognition model would distinguish images based on the existence of target infrastructure, and be agnostic to differences in geographical differences. The goal is to take the current feature representation, which clusters by location, and instead be able to cluster by presence or absence of infrastructure. 
@@ -288,27 +339,31 @@
                     <p class="text-muted">The model visibly separates (left figure) Chicago and Tyrol. But for the other 3 cities, the model does not give explicitly separated clusters, and thus does not differentiate well amongst the images from these different geographies. The middle figure consists of Kitsap and Vienna, and the right figure displays all 5 cities. We aim to investigate this separation by geography, and compare it to t-SNE feature visualization for data diversified using synthetic imagery.</p>                 
                   </div>
                 </div>         -->
-            </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- Rooftop Extraction section-->
-<section class="page-section" id="roof-extraction">
-  <div class="container">
+  <section class="page-section" id="roof-extraction">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Rooftop Extraction</h2>
-          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+          <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
+            &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Motivation Behind Synthetic Data</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real satellite imagery. We can see from the three synthetic satellite images below that there is something "off". To make them more realistic, we plan on transferring textures from real satellite imagery to synthetic imagery.</p>
+              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real
+                satellite imagery. We can see from the three synthetic satellite images below that there is something
+                "off". To make them more realistic, we plan on transferring textures from real satellite imagery to
+                synthetic imagery.</p>
             </div>
             <div class="col-md-2 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
@@ -324,14 +379,17 @@
             </div>
           </div>
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Towards Realistic Textures</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real satellite imagery. We can see from the three synthetic satellite images below that there is something "off". To make them more realistic, we plan on transferring textures from real satellite imagery to synthetic imagery.</p>
+              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real
+                satellite imagery. We can see from the three synthetic satellite images below that there is something
+                "off". To make them more realistic, we plan on transferring textures from real satellite imagery to
+                synthetic imagery.</p>
             </div>
             <div class="col-md-2 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
@@ -342,17 +400,21 @@
             <div class="col-md-1 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
             </div>
-            
+
           </div>
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Texture Synthesis Automated Pipeline (TSAP)</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">In order to automate the extraction, synthesis, and substitution of building rooftop textures, we created a pipeline that takes any of the 2500 images of cities in the INRIA dataset, capture the building rooftop texture in each city, then transfer the visual content and style onto a texture patch while maintaining image resolution, and finally, substitute these rooftop textures on top of buildings in simulated environments to create synthetic cities that are geography-agnostic.
+              <p class="text-muted">In order to automate the extraction, synthesis, and substitution of building rooftop
+                textures, we created a pipeline that takes any of the 2500 images of cities in the INRIA dataset,
+                capture the building rooftop texture in each city, then transfer the visual content and style onto a
+                texture patch while maintaining image resolution, and finally, substitute these rooftop textures on top
+                of buildings in simulated environments to create synthetic cities that are geography-agnostic.
               </p>
             </div>
             <div class="col-md-2 my-auto">
@@ -366,11 +428,13 @@
             </div>
           </div>
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-7 my-auto">
-              <center><iframe frameborder="0" class="juxtapose" width="100%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe></center>
+              <center><iframe frameborder="0" class="juxtapose" width="100%" height="400"
+                  src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe>
+              </center>
               <caption><i>Figure 3: Isolating building rooftops</i></caption>
             </div>
             <div class="col-md-5 my-auto">
@@ -378,24 +442,26 @@
               <ul class="text-muted">
                 <li>First, we go through the satellite image and get only the buildings</li>
                 <li>Upon isolating each individual building, a bounding box is made containing the rooftop.</li>
-                <li>The process we made automatically crops a rectangle out of the rooftop (for feeding into synthetic generation).</li>
+                <li>The process we made automatically crops a rectangle out of the rooftop (for feeding into synthetic
+                  generation).</li>
               </ul>
             </div>
           </div>
 
+        </div>
       </div>
-    </div>
-</section>
+  </section>
 
   <!-- Texture Synthesis section-->
-<section class="page-section" id="texture">
-  <div class="container">
+  <section class="page-section" id="texture">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Texture Synthesis</h2>
-          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+          <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
+            &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
 
@@ -404,16 +470,22 @@
               <caption><i>Figure 4: What is texture synthesis?</i></caption>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">Once we have obtained the largest rectangular roof, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the left.</p> 
+              <p class="text-muted">Once we have obtained the largest rectangular roof, we want to be able to transfer
+                the visual content and style of this roof texture to buildings in any other image. Using a picture of
+                red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’
+                color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the
+                left.</p>
             </div>
           </div>
 
-            <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-4 my-auto">
               <h3 class="service-heading">Step 2: Texture Synthesis</h3>
-              <p class="text-muted">In our situation, we accomplished this by applying a feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure, and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
+              <p class="text-muted">In our situation, we accomplished this by applying a feed-forward convolutional
+                neural network model that recreates the color, gradient, rooftop structure, and more in a new texture
+                patch, as seen below with the example of a roof of a building in Austin.</p>
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_pipeline.png" class="img-responsive" alt="" style="width:100%">
@@ -424,20 +496,24 @@
             </div>
           </div>
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-6 my-auto">
               <img src="img/texture/bank.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 4: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
+              <caption><i>Figure 4: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture
+                  Patches Shown on the Right.</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Step 3: Create Bank of Rooftop Textures</h3>
-              <p class="text-muted">We then apply this model on unique rooftops for all 2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
+              <p class="text-muted">We then apply this model on unique rooftops for all 2500 images of 5 cities in the
+                INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were
+                extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen
+                in the example below with the city of Vienna, Austria.</p>
             </div>
           </div>
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <div class="col-md-6 my-auto">
@@ -447,23 +523,24 @@
             <div class="col-md-6 my-auto">
               <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
             </div>
-            
+
           </div>
 
-          
+
+        </div>
       </div>
-    </div>
-</section>
+  </section>
 
   <!-- Rooftop Substitution section-->
-<section class="page-section" id="roof-substitution">
-  <div class="container">
+  <section class="page-section" id="roof-substitution">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Rooftop Substitution</h2>
-          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+          <h2 class="section-heading text-uppercase">Rooftop Substitution</h2>
+          <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
+            &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
 
-          <hr class="divider light my-4"/>
+          <hr class="divider light my-4" />
 
           <div class="row">
             <!-- <div class="col-md-2 my-auto">
@@ -475,12 +552,34 @@
             </div> -->
 
             <div class="col-md-6 my-auto">
-              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.</p> 
-              <p class="text-muted">We have generated a synthetic texture patch using a specific building from Vienna. Below we can see a target satellite image from Austin. Our goal is to use the synthesized texture patches and substitute these onto our target geography. It is important to note that we do not do this arbitrarily. Before we substitute our synthesized textures onto the rooftops of our target geography, we look at a pixel size distribution of the buildings from our target domain. We then decide on sizing buckets, and when we synthesize the synthetic textures, we also note the size of the building that the texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute onto the target building. This ensures that our final output is as realistic as possible, since we can imagine that small and large buildings can have notable differences in rooftop textures. </p>
+              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted
+                rooftops from source images and generated synthetic textures, we want to substitute these synthesized
+                textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.
+              </p>
+              <p class="text-muted">We have generated a synthetic texture patch using a specific building from Vienna.
+                Below we can see a target satellite image from Austin. Our goal is to use the synthesized texture
+                patches and substitute these onto our target geography. It is important to note that we do not do this
+                arbitrarily. Before we substitute our synthesized textures onto the rooftops of our target geography, we
+                look at a pixel size distribution of the buildings from our target domain. We then decide on sizing
+                buckets, and when we synthesize the synthetic textures, we also note the size of the building that the
+                texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute
+                onto the target building. This ensures that our final output is as realistic as possible, since we can
+                imagine that small and large buildings can have notable differences in rooftop textures. </p>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by which we are substituting the synthesized textures in. When we substitute in the synthesized textures, we start from the upper left corner of the texture patch and the upper left corner of the target rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop. The quality of the substituted textures is not the best right now, but this was mainly for proof of concept. We can imagine that if we start generating textures of higher resolution and input these into a city generating software, such as CityEngine, we can generate rooftop textures that are more realistic and carry the properties of real rooftops. </p>
-              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by
+                which we are substituting the synthesized textures in. When we substitute in the synthesized textures,
+                we start from the upper left corner of the texture patch and the upper left corner of the target
+                rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop.
+                The quality of the substituted textures is not the best right now, but this was mainly for proof of
+                concept. We can imagine that if we start generating textures of higher resolution and input these into a
+                city generating software, such as CityEngine, we can generate rooftop textures that are more realistic
+                and carry the properties of real rooftops. </p>
+              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic
+                imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions
+                and create more accurate building maps. As this research progresses, the team will expand this pipeline
+                to other types of infrastructure besides buildings, eventually allowing us to map out entire energy
+                grids around the world.</p>
             </div>
 
             <div class="col-md-2 my-auto">
@@ -494,10 +593,10 @@
             </div>
           </div>
 
-          
+
+        </div>
       </div>
-    </div>
-</section>
+  </section>
 
 
   <!-- Services -->
@@ -722,8 +821,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Meet the Team</h2>
         </div>
       </div>
       <div class="row">
@@ -770,9 +868,9 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <a href = "https://www.aneeshgupta.me">
-            <img class="mx-auto rounded-circle" src="img/team/cropped/Aneesh.jpg" alt="">
-          </a>
+            <a href="https://www.aneeshgupta.me">
+              <img class="mx-auto rounded-circle" src="img/team/cropped/Aneesh.jpg" alt="">
+            </a>
             <h4>Aneesh Gupta</h4>
             <p class="text-muted">Class of 2022</p>
             <p class="text-muted">Computer Science</p>
@@ -951,7 +1049,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Threads</li>
@@ -985,7 +1085,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Explore</li>
@@ -1019,7 +1121,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Finish</li>
@@ -1053,7 +1157,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Lines</li>
@@ -1087,7 +1193,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Southwest</li>
@@ -1121,7 +1229,9 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Window</li>
