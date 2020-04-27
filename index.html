@@ -106,7 +106,6 @@
     </div>
 </section>
 
-
   <!-- Image Segmentation section-->
   <section class="page-section" id="segmentation">
     <div class="container">
@@ -294,6 +293,7 @@
     </div>
 </section>
 
+  <!-- Rooftop Extraction section-->
 <section class="page-section" id="roof-extraction">
   <div class="container">
       <div class="row justify-content-center">
@@ -371,7 +371,7 @@
           <div class="row">
             <div class="col-md-7 my-auto">
               <center><iframe frameborder="0" class="juxtapose" width="100%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe></center>
-              <caption><i>Fig.: Isolating building rooftops</i></caption>
+              <caption><i>Figure 3: Isolating building rooftops</i></caption>
             </div>
             <div class="col-md-5 my-auto">
               <h3 class="service-heading">Step 1: Rooftop Extraction</h3>
@@ -382,13 +382,12 @@
               </ul>
             </div>
           </div>
-          <hr class="divider light my-4"/>
 
-          
       </div>
     </div>
 </section>
 
+  <!-- Texture Synthesis section-->
 <section class="page-section" id="texture">
   <div class="container">
       <div class="row justify-content-center">
@@ -399,32 +398,56 @@
           <hr class="divider light my-4"/>
 
           <div class="row">
-            <!-- <div class="col-md-2 my-auto">
-            </div>
-            <div class="col-md-8 my-auto">
-              <p class="text-muted"></p>
-            </div>
-            <div class="col-md-2 my-auto">
-            </div> -->
 
             <div class="col-md-6 my-auto">
-              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.</p> 
-              <p class="text-muted">We have generated a synthetic texture patch using a specific building from Vienna. Below we can see a target satellite image from Austin. Our goal is to use the synthesized texture patches and substitute these onto our target geography. It is important to note that we do not do this arbitrarily. Before we substitute our synthesized textures onto the rooftops of our target geography, we look at a pixel size distribution of the buildings from our target domain. We then decide on sizing buckets, and when we synthesize the synthetic textures, we also note the size of the building that the texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute onto the target building. This ensures that our final output is as realistic as possible, since we can imagine that small and large buildings can have notable differences in rooftop textures. </p>
+              <img src="img/texture/pepper.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 4: What is texture synthesis?</i></caption>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by which we are substituting the synthesized textures in. When we substitute in the synthesized textures, we start from the upper left corner of the texture patch and the upper left corner of the target rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop. The quality of the substituted textures is not the best right now, but this was mainly for proof of concept. We can imagine that if we start generating textures of higher resolution and input these into a city generating software, such as CityEngine, we can generate rooftop textures that are more realistic and carry the properties of real rooftops. </p>
-              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+              <p class="text-muted">Once we have obtained the largest rectangular roof, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the left.</p> 
             </div>
+          </div>
 
+            <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-4 my-auto">
+              <h3 class="service-heading">Step 2: Texture Synthesis</h3>
+              <p class="text-muted">In our situation, we accomplished this by applying a feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure, and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
+            </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/texture/texture_pipeline.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 4: Texture Synthesis Process</i></caption>
+            </div>
             <div class="col-md-2 my-auto">
+              <img src="img/texture/texture_process.gif" class="img-responsive" alt="" style="width:100%">
             </div>
-            <div class="col-md-8 my-auto">
-              <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 3: Rooftop Substitution Pipeline</i></caption>
+          </div>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <img src="img/texture/bank.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 4: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
             </div>
-            <div class="col-md-2 my-auto">
-              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Step 3: Create Bank of Rooftop Textures</h3>
+              <p class="text-muted">We then apply this model on unique rooftops for all 2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
             </div>
+          </div>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Expand to Other Landscapes</h3>
+              <p class="text-muted">Next Step - Including Multiple Landscapes in Our Synthetic Texture Bank.</p>
+            </div>
+            <div class="col-md-6 my-auto">
+              <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            
           </div>
 
           
@@ -432,6 +455,7 @@
     </div>
 </section>
 
+  <!-- Rooftop Substitution section-->
 <section class="page-section" id="roof-substitution">
   <div class="container">
       <div class="row justify-content-center">
@@ -515,7 +539,7 @@
   </section> -->
 
   <!-- Portfolio Grid -->
-  <section class="bg-light page-section" id="portfolio">
+  <!-- <section class="bg-light page-section" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -610,10 +634,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- About -->
-  <section class="page-section" id="about">
+  <!-- <section class="page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -691,7 +715,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Team -->
   <section class="bg-light page-section" id="team">
@@ -772,6 +796,14 @@
         </div>
         <div class="col-sm-4">
           <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/cropped/Vivek.jpg" alt="">
+            <h4>Vivek Sahukar</h4>
+            <p class="text-muted">Class of 2020</p>
+            <p class="text-muted">Masters in Interdisciplinary Data Science</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/cropped/Ayo.jpg" alt="">
             <h4>Ayooluwa Balogun</h4>
             <p class="text-muted">Class of 2020</p>
@@ -779,11 +811,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -816,7 +848,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="page-section" id="contact">
+  <!-- <section class="page-section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -858,16 +890,16 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <span class="copyright">Copyright &copy; Your Website 2019</span>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="#">
@@ -885,8 +917,8 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="col-md-4">
+        </div> -->
+        <div class="col-md-6">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">Privacy Policy</a>
