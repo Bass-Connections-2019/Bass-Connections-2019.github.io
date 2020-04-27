@@ -47,10 +47,10 @@
             <a class="nav-link js-scroll-trigger" href="#roof-extraction">Roof Extraction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Texture Synthesis</a>
+            <a class="nav-link js-scroll-trigger" href="#texture">Texture Synthesis</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#segmentation">Roof Substitution</a>
+            <a class="nav-link js-scroll-trigger" href="#roof-substitution">Roof Substitution</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -88,7 +88,7 @@
                   </div>
                   <div class="col-md-6 my-auto">
                     <img src="img/about/intro_picture.png" class="img-responsive" alt="" style="width:100%">
-                    <p>Figure 1: Electrification around the globe</p>
+                    <caption><i>Figure 1: Electrification around the globe</i></caption>
                   </div>
                 </div>
                 <hr class="divider light my-4"/>
@@ -105,8 +105,6 @@
         </div>
     </div>
 </section>
-
-
 
 
   <!-- Image Segmentation section-->
@@ -244,7 +242,7 @@
                   </div>
                   <div class="col-md-6 my-auto">
                     <img src="img/accuracy_table.png" class="img-responsive" alt="" style="width:100%">
-                    <p class="text-muted">Table: Evaluation of models trained on each individual city from the Inria dataset, as well as a model trained on the entire dataset. The models are then evaluated on each city (columns), and results are measured in IoU (Intersection over Union). Orange cells represent the best model for each city, while green cells represent best performance out of all models.</p>
+                    <caption><i>Table: Evaluation of models trained on each individual city from the Inria dataset, as well as a model trained on the entire dataset. The models are then evaluated on each city (columns), and results are measured in IoU (Intersection over Union). Orange cells represent the best model for each city, while green cells represent best performance out of all models.</i></caption>
                   </div>
                 </div>
 
@@ -300,18 +298,186 @@
   <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Rooftop extraction</h2>
-          <caption><i>Fig.: Isolating building rooftops</i></caption>
-          <center><iframe frameborder="0" class="juxtapose" width="50%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe></center>
+          <h2 class="section-heading text-uppercase">Rooftop Extraction</h2>
+          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Motivation Behind Synthetic Data</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real satellite imagery. We can see from the three synthetic satellite images below that there is something "off". To make them more realistic, we plan on transferring textures from real satellite imagery to synthetic imagery.</p>
+            </div>
+            <div class="col-md-2 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+            <div class="col-md-3 my-auto">
+              <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            <div class="col-md-3 my-auto">
+              <img src="img/extraction/fake2.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            <div class="col-md-3 my-auto">
+              <img src="img/extraction/fake3.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+          </div>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Towards Realistic Textures</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real satellite imagery. We can see from the three synthetic satellite images below that there is something "off". To make them more realistic, we plan on transferring textures from real satellite imagery to synthetic imagery.</p>
+            </div>
+            <div class="col-md-2 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+            <div class="col-md-9 my-auto">
+              <img src="img/extraction/realistic_texture.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            <div class="col-md-1 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+            
+          </div>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-6 my-auto">
+              <h3 class="service-heading">Texture Synthesis Automated Pipeline (TSAP)</h3>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">In order to automate the extraction, synthesis, and substitution of building rooftop textures, we created a pipeline that takes any of the 2500 images of cities in the INRIA dataset, capture the building rooftop texture in each city, then transfer the visual content and style onto a texture patch while maintaining image resolution, and finally, substitute these rooftop textures on top of buildings in simulated environments to create synthetic cities that are geography-agnostic.
+              </p>
+            </div>
+            <div class="col-md-2 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+            <div class="col-md-9 my-auto">
+              <img src="img/extraction/pipeline.png" class="img-responsive" alt="" style="width:100%">
+            </div>
+            <div class="col-md-1 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+          </div>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <div class="col-md-7 my-auto">
+              <center><iframe frameborder="0" class="juxtapose" width="100%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe></center>
+              <caption><i>Fig.: Isolating building rooftops</i></caption>
+            </div>
+            <div class="col-md-5 my-auto">
+              <h3 class="service-heading">Step 1: Rooftop Extraction</h3>
+              <ul class="text-muted">
+                <li>First, we go through the satellite image and get only the buildings</li>
+                <li>Upon isolating each individual building, a bounding box is made containing the rooftop.</li>
+                <li>The process we made automatically crops a rectangle out of the rooftop (for feeding into synthetic generation).</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="divider light my-4"/>
+
+          
+      </div>
+    </div>
+</section>
+
+<section class="page-section" id="texture">
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Texture Synthesis</h2>
+          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <!-- <div class="col-md-2 my-auto">
+            </div>
+            <div class="col-md-8 my-auto">
+              <p class="text-muted"></p>
+            </div>
+            <div class="col-md-2 my-auto">
+            </div> -->
+
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.</p> 
+              <p class="text-muted">We have generated a synthetic texture patch using a specific building from Vienna. Below we can see a target satellite image from Austin. Our goal is to use the synthesized texture patches and substitute these onto our target geography. It is important to note that we do not do this arbitrarily. Before we substitute our synthesized textures onto the rooftops of our target geography, we look at a pixel size distribution of the buildings from our target domain. We then decide on sizing buckets, and when we synthesize the synthetic textures, we also note the size of the building that the texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute onto the target building. This ensures that our final output is as realistic as possible, since we can imagine that small and large buildings can have notable differences in rooftop textures. </p>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by which we are substituting the synthesized textures in. When we substitute in the synthesized textures, we start from the upper left corner of the texture patch and the upper left corner of the target rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop. The quality of the substituted textures is not the best right now, but this was mainly for proof of concept. We can imagine that if we start generating textures of higher resolution and input these into a city generating software, such as CityEngine, we can generate rooftop textures that are more realistic and carry the properties of real rooftops. </p>
+              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+            </div>
+
+            <div class="col-md-2 my-auto">
+            </div>
+            <div class="col-md-8 my-auto">
+              <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 3: Rooftop Substitution Pipeline</i></caption>
+            </div>
+            <div class="col-md-2 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+          </div>
+
+          
+      </div>
+    </div>
+</section>
+
+<section class="page-section" id="roof-substitution">
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Rooftop Substitution</h2>
+          <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+
+          <hr class="divider light my-4"/>
+
+          <div class="row">
+            <!-- <div class="col-md-2 my-auto">
+            </div>
+            <div class="col-md-8 my-auto">
+              <p class="text-muted"></p>
+            </div>
+            <div class="col-md-2 my-auto">
+            </div> -->
+
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.</p> 
+              <p class="text-muted">We have generated a synthetic texture patch using a specific building from Vienna. Below we can see a target satellite image from Austin. Our goal is to use the synthesized texture patches and substitute these onto our target geography. It is important to note that we do not do this arbitrarily. Before we substitute our synthesized textures onto the rooftops of our target geography, we look at a pixel size distribution of the buildings from our target domain. We then decide on sizing buckets, and when we synthesize the synthetic textures, we also note the size of the building that the texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute onto the target building. This ensures that our final output is as realistic as possible, since we can imagine that small and large buildings can have notable differences in rooftop textures. </p>
+            </div>
+            <div class="col-md-6 my-auto">
+              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by which we are substituting the synthesized textures in. When we substitute in the synthesized textures, we start from the upper left corner of the texture patch and the upper left corner of the target rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop. The quality of the substituted textures is not the best right now, but this was mainly for proof of concept. We can imagine that if we start generating textures of higher resolution and input these into a city generating software, such as CityEngine, we can generate rooftop textures that are more realistic and carry the properties of real rooftops. </p>
+              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+            </div>
+
+            <div class="col-md-2 my-auto">
+            </div>
+            <div class="col-md-8 my-auto">
+              <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 3: Rooftop Substitution Pipeline</i></caption>
+            </div>
+            <div class="col-md-2 my-auto">
+              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            </div>
+          </div>
+
+          
       </div>
     </div>
 </section>
 
 
-
-
   <!-- Services -->
-  <section class="page-section" id="services">
+  <!-- <section class="page-section" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -346,7 +512,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Portfolio Grid -->
   <section class="bg-light page-section" id="portfolio">
