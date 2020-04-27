@@ -44,13 +44,13 @@
             <a class="nav-link js-scroll-trigger" href="#segmentation">Image Segmentation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#segmentation">Domain Adaption</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#roof-extraction">Roof Extraction</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Texture Synthesis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#segmentation">Roof Substitution</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -115,26 +115,19 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Image Segmentation</h2>
-                <h3 class="section-subheading text-muted">&#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Accuracy. &nbsp &#8226 Features Visualization through T-SNE.</h3>
-                <!-- <div class="row">
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">Image Segmentation is a deep learning model which can segment images and identify target objects at scale by assigning each pixel to a probability. Satellite imagery can thus be simplified into analyzable structural maps and offer insights on the model's generalizability across different geographic domains. </p>
-                  </div>
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">We chose Models for Remote Sensing (MRS), an encoder-decoder model to perform the segmentation. To scope into the problem of cross-geographical adaptation, we trained and tested the MRS2 model using a geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different cities across the world.</p></div>
-                </div> -->
+                <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process. &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3>
+                
                 
                 <hr class="divider light my-4"/>
 
                 <div class="row">
-                  
-                  <div class="col-md-6 my-auto">
-                    <p class="text-muted">Previous Bass Connections teams have worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Existing methodology is to use convolutional neural networks, a kind of deep learning model, to identify energy infrastructure in satellite images. The 2019 research group was able to create an object identification model that can identify different types of city infrastructure, as shown here:</p>
-                  </div>
                   <div class="col-md-6 my-auto">
                     <h3 class="service-heading">Previous Progress</h3>
                   </div>
-
+                  <div class="col-md-6 my-auto">
+                    <p class="text-muted">Previous Bass Connections teams have worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Existing methodology is to use convolutional neural networks, a kind of deep learning model, to identify energy infrastructure in satellite images. The 2019 research group was able to create an object identification model that can identify different types of city infrastructure, as shown here:</p>
+                  </div>
+                  
 
                   <div class="row text-center">
                     <div class="col-md-4">
@@ -160,10 +153,9 @@
                       <h4 class="service-heading">3. Identifying Energy Infrastructure</h4>
                       <p class="text-muted">Finally, the model is tested on new images, where each identified object (bounded by red boxes) was assigned a probability score of belonging to a certain class.</p>
                     </div>
+                
                   </div>
                   
-                  
-
                   <!-- <div class="col-md-8 my-auto">
                     <img src="img/3domains.png" class="img-responsive" alt="" style="width:100%">
                   </div>
@@ -175,42 +167,118 @@
 
                 <hr class="divider light my-4"/>
 
-
-                
                 <div class="row">
-                  <div class="col-md-8 my-auto">
-                    <img src="img/Model_iteration.png" class="img-responsive" alt="" style="width:100%">
+                  
+                  <div class="col-md-6 my-auto">
+                    <h3 class="service-heading">Our Project Goal is to Increase Adaptability Across Geographies</h3>
                   </div>
-                  <div class="col-md-4 my-auto">
-                    <h3 class="service-heading">Model Iterative Process</h3>
-                    <p class="text-muted">The input satellite image from the Inria dataset is fed through the CNN to give an output segmented image. We are extracting feature visualizations from the second to last layer of the model and using those visualizations to evaluate the segmentation capability of our model, adding synthetic imagery as needed.</p>
+
+                  <div class="col-md-6 my-auto">
+                    <p class="text-muted">We are building on last year team’s work and our main goal this year has been to make our model generalize across different geographies. <strong>Image Segmentation</strong> is a deep learning model which can segment images and identify target objects at scale by assigning each pixel to a probability. Satellite imagery can thus be simplified into analyzable structural maps and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong>, an encoder-decoder model to perform the segmentation. To scope into the problem of cross-geographical adaptation, we trained and tested the MRS2 model using a geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different cities across the world.</p></div>
+                  </div>
+
+                  <div class="row text-center">
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-9x">
+                        <!-- <i class="fas fa-stack-2x text-primary"></i> -->
+                        <img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:60%">
+                        <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+                      </span>
+                      <h4 class="service-heading">1. Input Labelled Satellite Image</h4>
+                      <p class="text-muted">Labelled satellite image where each object is identified in the training dataset
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-9x">
+                        <img src="img/intro/22_step.png" class="img-responsive" alt="" style="width:60%">
+                      </span>
+                      <h4 class="service-heading">2. Apply Layered Neural Network</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-9x">
+                        <img src="img/intro/33_step.png" class="img-responsive" alt="" style="width:60%">
+                      </span>
+                      <h4 class="service-heading">3. Output Segmented Image</h4>
+                      <p class="text-muted">In the segmented image, the white pixels are the object of interest (such as building) that the model has identified and the black pixels are the area which are not of interest to us</p>
+                    </div>
+                  
+                  
+                </div>
+
+                <hr class="divider light my-4"/>
+                <div class="row">
+                  <div class="col-md-6 my-auto">
+                    <h3 class="service-heading">Deep Learning Model Accuracy Metrics</h3>
+                  </div>
+                  <div class="col-md-6 my-auto">
+                    <img src="img/intro/accuracy_metric.png" class="img-responsive" alt="" style="width:100%">
+                    <p class="text-muted">The output of the model is the predicted bounding boxes around the object of interest. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
+                      <ul class="text-muted">
+                        <li>The ground-truth bounding boxes (i.e., the hand labeled bounding boxes from the testing set that specify where in the image our object is).</li>
+                        <li>The predicted bounding boxes from our model.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
+
+                <hr class="divider light my-4"/>
+                <div class="row">
+                  <div class="col-md-6 my-auto">
+                    <h3 class="service-heading">Current Model Generalizes Poorly Across Geographies</h3>
+                  </div>
+                  <div class="col-md-6 my-auto">
+                    <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
+                    <p class="text-muted">We are building on last year team’s work and our main goal this year has been to make our model generalize across different geographies. In order to achieve that we need:</p>
+                  </div>
+                </div>
+
                 <hr class="divider light my-4"/>
 
                 <div class="row">
-                  <div class="col-md-5 my-auto">
+                  <div class="col-md-6 my-auto">
                     <h3 class="service-heading">Cross-Domain Accuracy</h3>
                     <p class="text-muted">As shown in the table, the most accurate model for a given city is the model that is trained on that same city, and models trained on a single city don’t necessarily generalize well to the other cities. Furthermore, we found that training a model on all of the cities results in higher test accuracies across the board.
                       To address this problem of transferring learning across geographic domains we want to:
                       Visualize the model’s representation of the current training domain(Goal 2).
                       Provide ways to diversify this training domain (Goal 3).</p>
                   </div>
-                  <div class="col-md-7 my-auto">
+                  <div class="col-md-6 my-auto">
                     <img src="img/accuracy_table.png" class="img-responsive" alt="" style="width:100%">
                     <p class="text-muted">Table: Evaluation of models trained on each individual city from the Inria dataset, as well as a model trained on the entire dataset. The models are then evaluated on each city (columns), and results are measured in IoU (Intersection over Union). Orange cells represent the best model for each city, while green cells represent best performance out of all models.</p>
                   </div>
                 </div>
+
+
+                <!-- <div class="col-md-8 my-auto">
+                    <img src="img/3domains.png" class="img-responsive" alt="" style="width:100%">
+                  </div>
+                  <div class="col-md-4 my-auto">
+                    <p class="text-muted">However, their models have shown bad adaptation with respect to different geographic domains. Challenges associated with satellite imagery with different geographies: (from left) Vienna, Tyrol, Austin, Chicago. Figures are from the INRIA dataset. 
+                      </p>
+                  </div> -->
+
+
+               
+
+
                 <hr class="divider light my-4"/>
-                <h3 class="service-heading">Features Visualization through T-SNE</h3>
                 <div class="row">
-                                   
-                  
-                  <div class="col-md-5 my-auto">
+                  <div class="col-md-8 my-auto">
+                    <img src="img/4_domains.png" class="img-responsive" alt="" style="width:100%">
+                  </div>
+                  <div class="col-md-4 my-auto">
+                    <h3 class="service-heading">Each Geography is Incredibly Different</h3>
+                    <p class="text-muted">The input satellite image from the Inria dataset is fed through the CNN to give an output segmented image. We are extracting feature visualizations from the second to last layer of the model and using those visualizations to evaluate the segmentation capability of our model, adding synthetic imagery as needed.</p>
+                  </div>
+                </div>
+                <!-- <hr class="divider light my-4"/> -->
 
-
-                    
-                    <p class="text-muted">Feature visualization is the process of visualizing how a decision system ‘interprets’ images. A robust recognition model would distinguish images based on the existence of target infrastructure, and be agnostic to differences in geographical differences. The goal is to take the current feature representation, which clusters by location, and instead be able to cluster by presence or absence of infrastructure. 
+                
+                <!-- <hr class="divider light my-4"/> -->
+                <!-- <h3 class="service-heading">Features Visualization through T-SNE</h3>
+                <div class="row">
+                <div class="col-md-5 my-auto">
+                  <p class="text-muted">Feature visualization is the process of visualizing how a decision system ‘interprets’ images. A robust recognition model would distinguish images based on the existence of target infrastructure, and be agnostic to differences in geographical differences. The goal is to take the current feature representation, which clusters by location, and instead be able to cluster by presence or absence of infrastructure. 
                     </p>
                   </div>
                   <div class="col-md-7 my-auto">
@@ -220,16 +288,9 @@
                     <img src="img/tsne.png" class="img-responsive" alt="" style="width:100%">
                   </div>
                   <div class="col-md-12 my-auto">                   
-                    <p class="text-muted">The model visibly separates (left figure) Chicago and Tyrol. But for the other 3 cities, the model does not give explicitly separated clusters, and thus does not differentiate well amongst the images from these different geographies. The middle figure consists of Kitsap and Vienna, and the right figure displays all 5 cities. We aim to investigate this separation by geography, and compare it to t-SNE feature visualization for data diversified using synthetic imagery.</p>
-                    
+                    <p class="text-muted">The model visibly separates (left figure) Chicago and Tyrol. But for the other 3 cities, the model does not give explicitly separated clusters, and thus does not differentiate well amongst the images from these different geographies. The middle figure consists of Kitsap and Vienna, and the right figure displays all 5 cities. We aim to investigate this separation by geography, and compare it to t-SNE feature visualization for data diversified using synthetic imagery.</p>                 
                   </div>
-                  
-
-
-
-
-
-                </div>        
+                </div>         -->
             </div>
         </div>
     </div>
@@ -245,6 +306,8 @@
       </div>
     </div>
 </section>
+
+
 
 
   <!-- Services -->
