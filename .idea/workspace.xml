@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="470" column="182" selection-start-line="470" selection-start-column="182" selection-end-line="470" selection-end-column="182" />
+            <state relative-caret-position="425">
+              <caret line="470" column="91" selection-start-line="470" selection-start-column="91" selection-end-line="470" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -89,15 +89,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588441286635</updated>
-      <workItem from="1588441292883" duration="884000" />
+      <workItem from="1588441292883" duration="1287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="884000" />
+    <option name="totallyTimeSpent" value="1287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2183" y="-96" width="1177" height="1080" extended-state="6" />
+    <frame x="2447" y="-96" width="913" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -105,12 +105,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29427314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05510907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -137,8 +137,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="470" column="182" selection-start-line="470" selection-start-column="182" selection-end-line="470" selection-end-column="182" />
+        <state relative-caret-position="425">
+          <caret line="470" column="91" selection-start-line="470" selection-start-column="91" selection-end-line="470" selection-end-column="91" />
         </state>
       </provider>
     </entry>
