@@ -40,22 +40,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase my-auto text-center">
-          <li class="nav-item">
+          <li class="nav-item my-auto">
             <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-auto">
             <a class="nav-link js-scroll-trigger" href="#project-background">Project Background</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#roof-extraction">Roof Extraction</a>
+          <li class="nav-item my-auto">
+            <a class="nav-link js-scroll-trigger" href="#roof-extraction">Addressing Geographic Diversity</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-auto">
             <a class="nav-link js-scroll-trigger" href="#texture">Texture Synthesis</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-auto">
             <a class="nav-link js-scroll-trigger" href="#roof-substitution">Roof Substitution</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-auto">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
         </ul>
@@ -72,7 +72,7 @@
         </div>
         <p class="text-white-75 font-weight-light mb-5">Aneesh Gupta, Ayooluwa Balogun, Gaurav Uppal, Jason Wang, Norah
           Tan, Scott Heng On, Winston Yau, Vivek Sahukar</p>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#introduction">Read More</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://github.com/Bass-Connections-2019">See Our Github Repository</a>
       </div>
     </div>
   </header>
@@ -93,7 +93,7 @@
               <p class="text-muted">Access to electricity is one of the most important requisites to economic and
                 societal development. It is associated with decreased maternal mortality, increased education levels,
                 and decreased poverty. <a href="https://nature.berkeley.edu/er100/readings/nclimate2512.pdf"
-                  target="_blank">P. Alstone, et al. Decentralized energy systems for clean electricity access. </a> However, 1 billion people still lack access to electricity. To enable electrification and grid expansion in energy-poor regions, it is crucial to know where the existing infrastructure is. This information can help policymakers and businesses decide on whether to expand the national grid, build a microgrid, or provide direct off-grid solar PV. Current approaches to identifying and mapping energy infrastructure tend to be expensive and time-intensive, consisting of aggregating survey data from the ground level and roughly scaling it across regions. This is where we want to help. </p>
+                  target="_blank">[P. Alstone, et al. Decentralized energy systems for clean electricity access. ]</a> However, 1 billion people still lack access to electricity. To enable electrification and grid expansion in energy-poor regions, it is crucial to know where the existing infrastructure is. This information can help policymakers and businesses decide on whether to expand the national grid, build a microgrid, or provide direct off-grid solar PV. Current approaches to identifying and mapping energy infrastructure tend to be expensive and time-intensive, consisting of aggregating survey data from the ground level and roughly scaling it across regions. This is where we want to help. </p>
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/about/intro_picture.png" class="img-responsive" alt="" style="width:100%">
@@ -133,12 +133,7 @@
               <h3 class="service-heading">Background</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">Previous Bass Connections teams have worked on developing deep learning models that
-                identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid
-                policymakers in implementing effective electrification strategies. Existing methodology is to use
-                convolutional neural networks, a kind of deep learning model, to identify energy infrastructure in
-                satellite images. The 2019 research group was able to create an object identification model that can
-                identify different types of city infrastructure, as shown here:</p>
+              <p class="text-muted">For three years, the Duke Energy Data Analytics Lab has worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Researchers have already been able to create an object identification model that can ID different types of energy infrastructure, as shown here: <a href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19 Bass Connections Team]</a></p>
             </div>
 
 
@@ -188,50 +183,30 @@
           <div class="row">
 
             <div class="col-md-6 my-auto">
-              <h3 class="service-heading">Our Project Goal is to Increase Adaptability Across Geographies</h3>
+              <h3 class="service-heading">Our Main Research Goal is to Increase Model Adaptability Across Geographies</h3>
             </div>
 
             <div class="col-md-6 my-auto">
-              <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
+
+              <p class="text-muted"><strong>Image Segmentation</strong> is a deep
+                learning model which can segment images and identify target objects at scale by assigning each pixel to
+                a probability. Each Satellite image then can be simplified and partitioned into different segments based on object features, such as color, texture, and gradient, and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an encoder-decoder model to perform the segmentation. Then, we need:
+                <ul class="text-muted">
+                  <li>Labelled satellite image where each object is identified in the training dataset.</li>
+                  <li>After we apply the neural network, we get an output segmented image where the white pixels are the object of interest (such as buildings) that the model has identified and the black pixels are the area which do not have infrastructure.</li>
+                </ul>
+              </p>
+              
+
+              <!-- <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
                 make our model generalize across different geographies. <strong>Image Segmentation</strong> is a deep
                 learning model which can segment images and identify target objects at scale by assigning each pixel to
-                a probability. Satellite imagery can thus be simplified into analyzable structural maps and offer
-                insights on the model's generalizability across different geographic domains. We chose <strong>Models
-                  for Remote Sensing (MRS)</strong>, an encoder-decoder model to perform the segmentation. To scope into
+                a probability. Each Satellite image then can be simplified and partitioned into different segments based on object features, such as color, texture, and gradient, and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an encoder-decoder model to perform the segmentation. To scope into
                 the problem of cross-geographical adaptation, we trained and tested the MRS2 model using a
                 geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different
-                cities across the world.</p>
+                cities across the world.</p> -->
             </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-md-4">
-              <span class="fa-stack fa-9x">
-                <!-- <i class="fas fa-stack-2x text-primary"></i> -->
-                <img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:60%">
-                <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
-              </span>
-              <h4 class="service-heading">1. Input Labelled Satellite Image</h4>
-              <p class="text-muted">Labelled satellite image where each object is identified in the training dataset
-              </p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-9x">
-                <img src="img/intro/22_step.png" class="img-responsive" alt="" style="width:60%">
-              </span>
-              <h4 class="service-heading">2. Apply Layered Neural Network</h4>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-9x">
-                <img src="img/intro/33_step.png" class="img-responsive" alt="" style="width:60%">
-              </span>
-              <h4 class="service-heading">3. Output Segmented Image</h4>
-              <p class="text-muted">In the segmented image, the white pixels are the object of interest (such as
-                building) that the model has identified and the black pixels are the area which are not of interest to
-                us</p>
-            </div>
-
-
+            <div class="col-md-12 my-auto"><img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:80%"></div>
           </div>
 
           <hr class="divider light my-4" />
@@ -302,14 +277,12 @@
           <hr class="divider light my-4" />
           <div class="row">
             <div class="col-md-8 my-auto">
+              <h3 class="service-heading">Each Geography is Incredibly Different</h3>
               <img src="img/4_domains.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 2: Images are taken for each city from the Google Earth with camera height at 500 m.</i></caption>
             </div>
             <div class="col-md-4 my-auto">
-              <h3 class="service-heading">Each Geography is Incredibly Different</h3>
-              <p class="text-muted">The input satellite image from the Inria dataset is fed through the CNN to give an
-                output segmented image. We are extracting feature visualizations from the second to last layer of the
-                model and using those visualizations to evaluate the segmentation capability of our model, adding
-                synthetic imagery as needed.</p>
+              <p class="text-muted"> As seen in the two object detection tasks, the model accuracy increases if the model is trained on different cities. The geography and building types of each city is enormously different. The reason for improvement in accuracy is that the model is able to learn features of the different cities. The buildings in Austin and Kitsap are widely spaced, whereas the buildings in Chicago and Vienna are tightly packed. The Kitsap has more green cover and the color of cover is also more green compared to all other cities. The texture of Vienna buildings has a peculiar reddish tone. Due to the difference in the physical features of each city, the training dataset should be representative of all these different features for the model accuracy to improve significantly.</p>
             </div>
           </div>
           <!-- <hr class="divider light my-4"/> -->
@@ -342,7 +315,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Rooftop Extraction</h2>
+          <h2 class="section-heading text-uppercase">Addressing Geographic Diversity</h2>
           <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
             &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
 
@@ -380,8 +353,7 @@
             </div>
             <div class="col-md-6 my-auto">
               <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real
-                satellite imagery. We can see from the three synthetic satellite images below that there is something
-                "off". To make them more realistic, we plan on transferring textures from real satellite imagery to
+                satellite imagery. We can see from the three synthetic satellite images do not have enough resemblance to real life buildings. To make them more realistic, we plan on transferring textures from real satellite imagery to
                 synthetic imagery.</p>
             </div>
             <div class="col-md-2 my-auto">
@@ -461,7 +433,7 @@
             <div class="col-md-6 my-auto">
               <img src="img/texture/pepper.png" class="img-responsive" alt="" style="width:100%">
               <caption><i>Figure 4: What is texture synthesis? </i></caption><br>
-              <a href="https://arxiv.org/abs/1603.03417"> <caption><i>Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized Images</i></caption></a>
+              <a href="https://arxiv.org/abs/1603.03417"><caption><i>[Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized Images.]</i></caption></a>
             </div>
             <div class="col-md-6 my-auto">
               <p class="text-muted">Once we have obtained the largest rectangular roof, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the right.</p>
@@ -898,7 +870,7 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/cropped/Ayo.jpg" alt="">
             <h4>Ayooluwa Balogun</h4>
-            <p class="text-muted">Class of 2020</p>
+            <p class="text-muted">Class of 2021</p>
             <p class="text-muted">Mechanical Engineering</p>
           </div>
         </div>
@@ -911,7 +883,9 @@
     </div>
   </section>
 
-  <section class="bg-light page-section" id="acknowledgement">
+
+
+  <section class="page-section" id="acknowledgement">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
@@ -952,7 +926,7 @@
   </section>
 
   <!-- Clients -->
-  <section class="py-5">
+  <!-- <section class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -977,7 +951,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact -->
   <!-- <section class="page-section" id="contact">
@@ -1029,28 +1003,28 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
+          <span class="copyright">Copyright &copy; 2019-2020 Duke Bass Connections: A Wider Lens on Energy</span>
         </div>
-        <!-- <div class="col-md-4">
+        <div class="col-md-6">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+              <a href="https://github.com/Bass-Connections-2019">
+                <i class="fab fa-github"></i>
               </a>
             </li>
-            <li class="list-inline-item">
+            <!-- <li class="list-inline-item">
               <a href="#">
                 <i class="fab fa-facebook-f"></i>
               </a>
-            </li>
+            </li> -->
             <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.instagram.com/dukebassconnections/">
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
-        </div> -->
-        <div class="col-md-6">
+        </div>
+        <!-- <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">Privacy Policy</a>
@@ -1059,7 +1033,7 @@
               <a href="#">Terms of Use</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>
