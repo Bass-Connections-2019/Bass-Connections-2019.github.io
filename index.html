@@ -88,7 +88,7 @@
             <!-- Previous Progress. </h3> -->
           <hr class="divider light my-4" />
           <div class="row">
-            <div class="col-md-6 my-auto">
+            <div class="col-md-6 my-auto" style = "text-align: left;">
               <h3 class="service-heading">Motivation</h3>
               <p class="text-muted">Access to electricity is one of the most important requisites to economic and
                 societal development. It is associated with decreased maternal mortality, increased education levels,
@@ -133,7 +133,7 @@
               <h3 class="service-heading">Background</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">For three years, the Duke Energy Data Analytics Lab has worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Researchers have already been able to create an object identification model that can ID different types of energy infrastructure, as shown here: <a href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19 Bass Connections Team]</a></p>
+              <p class="text-muted" style = "text-align: justify;">For three years, the Duke Energy Data Analytics Lab has worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Researchers have already been able to create an object identification model that can ID different types of energy infrastructure, as shown here: <a href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19 Bass Connections Team]</a></p>
             </div>
 
 
@@ -188,10 +188,10 @@
 
             <div class="col-md-6 my-auto">
 
-              <p class="text-muted"><strong>Image Segmentation</strong> is a deep
+              <p class="text-muted" style = "text-align: justify;"><strong>Image Segmentation</strong> is a deep
                 learning model which can segment images and identify target objects at scale by assigning each pixel to
                 a probability. Each Satellite image then can be simplified and partitioned into different segments based on object features, such as color, texture, and gradient, and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an encoder-decoder model to perform the segmentation. Then, we need:
-                <ul class="text-muted">
+                <ul class="text-muted"style = "text-align: justify;">
                   <li>Labelled satellite image where each object is identified in the training dataset.</li>
                   <li>After we apply the neural network, we get an output segmented image where the white pixels are the object of interest (such as buildings) that the model has identified and the black pixels are the area which do not have infrastructure.</li>
                 </ul>
@@ -216,13 +216,24 @@
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/intro/accuracy_metric.png" class="img-responsive" alt="" style="width:100%">
-              <p class="text-muted">The output of the model is the predicted bounding boxes around the object of
-                interest. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
-                <ul class="text-muted">
-                  <li>The ground-truth bounding boxes (i.e., the hand labeled bounding boxes from the testing set that
+              <p style = "text-align: left;">The output of the model is the predicted bounding boxes around the object of
+                interest - in our case, buildings. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
+                <ul style = "text-align: left;">
+                  <li>The <i>ground-truth bounding boxes</i> (i.e., the hand labeled bounding boxes from the testing set that
                     specify where in the image our object is).</li>
-                  <li>The predicted bounding boxes from our model.</li>
+                  <li>The <i>predicted bounding boxes</i> from our model.</li>
                 </ul>
+              </p>
+              <p style = "text-align: left;">
+                <i>Precision</i> measures how accurate our predictions are. i.e. the percentage of our predictions are correct.
+                <br>
+                <i>Recall</i> measures how accurately we can find all the positives. 
+                <br>
+              <i>Area of union</i> is the area encompassed by both the predicted bounding box and the ground-truth bounding box.<br>
+            <i>Area of overlap</i> is the common area between the predicted bounding box and the ground-truth bounding box.<br><br>
+Dividing the area of overlap by the area of union yields our final score — the Intersection over Union.<br><br>
+A detailed blogpost explaining the accuracy metrics with an example can be found <a href ="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/">here</a>.
+
               </p>
             </div>
           </div>
@@ -234,14 +245,15 @@
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
-              <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
-                make our model generalize across different geographies. In order to achieve that we need:</p>
+
+              <caption class="text-muted">We are building on last year team’s work and our main goal this year has been to
+                make our model generalize across different geographies. In order to achieve that we need:</caption>
             </div>
           </div>
 
           <hr class="divider light my-4" />
 
-          <div class="row">
+          <div class="row" style = "text-align: left;">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Cross-Domain Accuracy</h3>
               <p class="text-muted">As shown in the table, the most accurate model for a given city is the model that is
@@ -252,11 +264,13 @@
                 Visualize the model’s representation of the current training domain(Goal 2).
                 Provide ways to diversify this training domain (Goal 3).</p>
             </div>
-            <div class="col-md-6 my-auto">
-              <img src="img/accuracy_table.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Table: Evaluation of models trained on each individual city from the Inria dataset, as well as
-                  a model trained on the entire dataset. The models are then evaluated on each city (columns), and
-                  results are measured in IoU (Intersection over Union). Orange cells represent the best model for each
+            <div class="col-md-6 my-auto" style = "text-align: left;">
+              <figure>
+                <img src="img/city_scores_table.png" class="img-responsive" alt="" style="width:100%">
+                <figcaption style="text-align: center;">Numbers represent IoU.</figcaption>
+              </figure>
+              <caption>Table: <i>Evaluation of models trained on each individual city from the Inria dataset, as well as
+                  a model trained on the entire dataset. The models are then evaluated on each city (columns). Orange cells represent the best model for each
                   city, while green cells represent best performance out of all models.</i></caption>
             </div>
           </div>
@@ -397,7 +411,7 @@
 
           <div class="row">
             <div class="col-md-7 my-auto">
-              <center><iframe frameborder="0" class="juxtapose" width="100%" height="400"
+              <center><iframe frameborder="0" class="juxtapose" width="80%" height="400"
                   src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe>
               </center>
               <caption><i>Figure 3: Isolating building rooftops</i></caption>
