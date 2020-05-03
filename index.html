@@ -191,7 +191,7 @@
               <p class="text-muted" style = "text-align: justify;"><strong>Image Segmentation</strong> is a deep
                 learning model which can segment images and identify target objects at scale by assigning each pixel to
                 a probability. Each Satellite image then can be simplified and partitioned into different segments based on object features, such as color, texture, and gradient, and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an encoder-decoder model to perform the segmentation. Then, we need:
-                <ul class="text-muted"style = "text-align: justify;">
+                <ul class="text-muted"style = "text-align: left;">
                   <li>Labelled satellite image where each object is identified in the training dataset.</li>
                   <li>After we apply the neural network, we get an output segmented image where the white pixels are the object of interest (such as buildings) that the model has identified and the black pixels are the area which do not have infrastructure.</li>
                 </ul>
@@ -232,7 +232,7 @@
               <i>Area of union</i> is the area encompassed by both the predicted bounding box and the ground-truth bounding box.<br>
             <i>Area of overlap</i> is the common area between the predicted bounding box and the ground-truth bounding box.<br><br>
 Dividing the area of overlap by the area of union yields our final score — the Intersection over Union.<br><br>
-A detailed blogpost explaining the accuracy metrics with an example can be found <a href ="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/">here</a>.
+A detailed blogpost explaining the accuracy metrics with an example can be found <a href ="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/" target="_blank">here</a>.
 
               </p>
             </div>
@@ -256,7 +256,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row" style = "text-align: left;">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Cross-Domain Accuracy</h3>
-              <p class="text-muted">As shown in the table, the most accurate model for a given city is the model that is
+              <p >As shown in the table, the most accurate model for a given city is the model that is
                 trained on that same city, and models trained on a single city don’t necessarily generalize well to the
                 other cities. Furthermore, we found that training a model on all of the cities results in higher test
                 accuracies across the board.
@@ -296,7 +296,9 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <caption><i>Figure 2: Images are taken for each city from the Google Earth with camera height at 500 m.</i></caption>
             </div>
             <div class="col-md-4 my-auto">
-              <p class="text-muted"> As seen in the two object detection tasks, the model accuracy increases if the model is trained on different cities. The geography and building types of each city is enormously different. The reason for improvement in accuracy is that the model is able to learn features of the different cities. The buildings in Austin and Kitsap are widely spaced, whereas the buildings in Chicago and Vienna are tightly packed. The Kitsap has more green cover and the color of cover is also more green compared to all other cities. The texture of Vienna buildings has a peculiar reddish tone. Due to the difference in the physical features of each city, the training dataset should be representative of all these different features for the model accuracy to improve significantly.</p>
+              <p class="text-muted" style = "text-align: justify;"> As seen in the two object detection tasks, the model accuracy increases if the model is trained on different cities. The geography and building types of each city is enormously different. The reason for improvement in accuracy is that the model is able to learn features of the different cities. 
+                <br><br>
+                The buildings in Austin and Kitsap are widely spaced, whereas the buildings in Chicago and Vienna are tightly packed. The Kitsap has more green cover and the color of cover is also more green compared to all other cities. The texture of Vienna buildings has a peculiar reddish tone. Due to the difference in the physical features of each city, the training dataset should be representative of all these different features for the model accuracy to improve significantly.</p>
             </div>
           </div>
           <!-- <hr class="divider light my-4"/> -->
@@ -340,10 +342,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <h3 class="service-heading">Motivation Behind Synthetic Data</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real
-                satellite imagery. We can see from the three synthetic satellite images below that there is something
-                "off". To make them more realistic, we plan on transferring textures from real satellite imagery to
-                synthetic imagery.</p>
+              <p class="text-muted" style = "text-align: justify;">Synthetic imagery can thus help us <b>diversify</b> our training data, by adding more examples of different, representative satellite images.
+                Diversified training data, such as the "All Cities" example we see in the table above, can help us overcome the geographic differences, and build robust models, agnostic to geography.
+              <br><br>
+              Another great thing about synthetic data is that it removes the need for hand-annotation and manual labelling.
+              </p>
             </div>
             <div class="col-md-2 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
@@ -358,6 +361,8 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <img src="img/extraction/fake3.png" class="img-responsive" alt="" style="width:100%">
             </div>
           </div>
+          <br>
+          <p style="text-align: center;">Example of Synethetic Images from the Synthinel-1 Dataset</p>
 
           <hr class="divider light my-4" />
 
@@ -366,9 +371,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <h3 class="service-heading">Towards Realistic Textures</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">However, synthetic imagery is visibly different in its textures and styles from real
-                satellite imagery. We can see from the three synthetic satellite images do not have enough resemblance to real life buildings. To make them more realistic, we plan on transferring textures from real satellite imagery to
-                synthetic imagery.</p>
+              <p class="text-muted" style="text-align: left;">However, synthetic imagery is visibly different in its textures and styles from real
+                satellite imagery. We can see from the three synthetic satellite images above, that they do not have enough resemblance to real life buildings - there is something "off" and different about them.
+                <br><br>
+                To make them more realistic, we plan on <b>transferring textures</b> from real satellite imagery to
+                synthetic imagery:</p>
             </div>
             <div class="col-md-2 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
@@ -379,17 +386,15 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-1 my-auto">
               <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
             </div>
-
           </div>
-
           <hr class="divider light my-4" />
 
           <div class="row">
-            <div class="col-md-6 my-auto">
+            <div class="col-md-6 my-auto" id = "texture">
               <h3 class="service-heading">Texture Synthesis Automated Pipeline (TSAP)</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">In order to automate the extraction, synthesis, and substitution of building rooftop
+              <p class="text-muted" style="text-align: justify;">In order to automate the extraction, synthesis, and substitution of building rooftop
                 textures, we created a pipeline that takes any of the 2500 images of cities in the INRIA dataset,
                 capture the building rooftop texture in each city, then transfer the visual content and style onto a
                 texture patch while maintaining image resolution, and finally, substitute these rooftop textures on top
@@ -414,25 +419,38 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <center><iframe frameborder="0" class="juxtapose" width="80%" height="400"
                   src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=687e0484-81b9-11ea-a879-0edaf8f81e27"></iframe>
               </center>
-              <caption><i>Figure 3: Isolating building rooftops</i></caption>
             </div>
             <div class="col-md-5 my-auto">
               <h3 class="service-heading">Step 1: Rooftop Extraction</h3>
-              <ul class="text-muted">
+              <ol class="text-muted" style="text-align: justify;">
                 <li>First, we go through the satellite image and get only the buildings</li>
                 <li>Upon isolating each individual building, a bounding box is made containing the rooftop.</li>
-                <li>The process we made automatically crops a rectangle out of the rooftop (for feeding into synthetic
+                <li>The process we made <i>automatically crops</i> a rectangle out of the rooftop (for feeding into synthetic
                   generation).</li>
               </ul>
             </div>
           </div>
-
+          <div class = "row" style="align-items: center;">
+            <div class="col-md-7 my-auto">
+            <figure>
+              <img src = "img/how_it_works_roof_extract.png" style="width:100%">
+              <figcaption><i>Figure 1: How roof-extraction works</i></figcaption>
+            </figure>
+          </div>
+          <div class="col-md-5 my-auto">
+            <figure>
+              <img src = "img/extr.png" style="width:100%">
+              <figcaption><i>Figure 2: Examples</i></figcaption>
+            </figure>
+          </div>
+          </div>
         </div>
+      </div>
       </div>
   </section>
 
   <!-- Texture Synthesis section-->
-  <section class="page-section" id="texture">
+  <section class="page-section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
@@ -446,7 +464,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
 
             <div class="col-md-6 my-auto">
               <img src="img/texture/pepper.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 4: What is texture synthesis? </i></caption><br>
+              <caption><i>Figure 3: What is texture synthesis? </i></caption><br>
               <a href="https://arxiv.org/abs/1603.03417"><caption><i>[Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized Images.]</i></caption></a>
             </div>
             <div class="col-md-6 my-auto">
@@ -459,11 +477,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row">
             <div class="col-md-4 my-auto">
               <h3 class="service-heading">Step 2: Texture Synthesis</h3>
-              <p class="text-muted">In our situation, we accomplished this by applying a feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure, and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
+              <p class="text-muted" style="text-align: justify;">In our situation, we accomplished this by applying a feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure, and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_pipeline.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 5: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and Synthesized into the Texture Patch on the Right</i></caption>
+              <caption><i>Figure 4: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and Synthesized into the Texture Patch on the Right</i></caption>
             </div>
             <div class="col-md-2 my-auto">
               <img src="img/texture/texture_process2.gif" class="img-responsive" alt="" style="width:100%">
@@ -475,11 +493,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row">
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_bank_revised.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 6: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
+              <caption><i>Figure 5: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Step 3: Create Bank of Rooftop Textures</h3>
-              <p class="text-muted">We then apply this model on unique rooftops for all 2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
+              <p class="text-muted" style="text-align: justify;">We then apply this model on unique rooftops for all 2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
             </div>
           </div>
 
@@ -489,10 +507,12 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Expanding to Other Object Image Types</h3>
               <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 7: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
+              <caption><i>Figure 6: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">Using building rooftops as a proof-of-concept in our goal to include more diversity in landscape and infrastructure types in training data, we envision creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills and rivers from our rooftop texture bank. With successes applying our model on forests, rivers, carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range of scenes simulating actual landscapes in our target regions.<br>Once we are equipped with the texture bank, we move onto the next step: feeding textures from our synthetic texture bank to the texture substitution algorithm.</p>
+              <p class="text-muted" style="text-align: justify;">Using building rooftops as a proof-of-concept in our goal to include more diversity in landscape and infrastructure types in training data, we envision creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills and rivers from our rooftop texture bank. With successes applying our model on forests, rivers, carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range of scenes simulating actual landscapes in our target regions.<br>
+                <br>
+                Once we are equipped with the texture bank, we move onto the next step: feeding textures from our synthetic texture bank to the texture substitution algorithm.</p>
                 <!-- Rooftops are just the first step. We are able to generate a bank of multiple object image types for more robust substitution, some examples (on the left) include:
               <br>1: Forests
               <br>2: Rivers
@@ -536,20 +556,23 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
                 texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute
                 onto the target building. This ensures that our final output is as realistic as possible, since we can
                 imagine that small and large buildings can have notable differences in rooftop textures. </p> -->
-                <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 8 shows our texture substitution process. We take a source image, choose a target image, and match rooftop textures based on the sizing of the target rooftops. This can help make our synthetic cities more realistic, which can do a better job of diversifying training data.</p>
+                <p class="text-muted" style="text-align: justify;">
+                  The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 8 shows our texture substitution process. 
+                  <br>
+                  We take a <b>source image, choose a target image, and match rooftop textures</b> based on the sizing of the target rooftops. This can help make our synthetic cities more realistic, which can do a better job of diversifying training data.</p>
             </div>
             <div class="col-md-1 my-auto"></div>
 
             <div class="col-md-2 my-auto"></div>
             <div class="col-md-8 my-auto">
               <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 8: Rooftop Substitution Pipeline</i></caption>
+              <caption><i>Figure 7: Rooftop Substitution Pipeline</i></caption>
             </div>
             <div class="col-md-2 my-auto"></div>
 
             <div class="col-md-1 my-auto"></div>
             <div class="col-md-10 my-auto">
-                <p class="text-muted"><br>As shown in Figure 9, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in figure 10.</p>
+                <p class="text-muted" style="text-align: justify;"><br>As shown in Figure 8, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in figure 9.</p>
             </div>
             <div class="col-md-1 my-auto"></div>
 
@@ -558,22 +581,14 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <br>
               <img src="img/substitution/roofsub.PNG" class="img-responsive" alt="" style="width:80%">
               <br>
-              <caption><i>Figure 9: Examples of Rooftop Substitutions</i></caption>
+              <caption><i>Figure 8: Examples of Rooftop Substitutions</i></caption>
             </div>
             <div class="col-md-5 my-auto">
               <img src="img/substitution/process.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 10: Texture substitution process</i></caption>
+              <caption><i>Figure 9: Texture substitution process</i></caption>
             </div>
-
-            <div class="col-md-1 my-auto"></div>
-            <div class="col-md-10 my-auto">
-                <p class="text-muted"><br>At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
-            </div>
-            <div class="col-md-1 my-auto"></div>
-
+                <p style="text-align: justify;"><br>At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
           </div>
-
-
         </div>
       </div>
   </section>
