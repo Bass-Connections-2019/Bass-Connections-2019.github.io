@@ -158,7 +158,7 @@
                 <span class="fa-stack fa-9x">
                   <img src="img/intro/2_step.png" class="img-responsive" alt="" style="width:60%">
                 </span>
-                <h4 class="service-heading">2. Performing Object Detection</h4>
+                <h4 class="service-heading">2. Detect Pixels with Objects of Interest</h4>
                 <p class="text-muted">We use the model to detect different objects in the training dataset such as
                   energy infrastructure such as transmission lines and towers in addition to cars, buildings too. The
                   identified objects are bounded by blue boxes.</p>
@@ -167,7 +167,7 @@
                 <span class="fa-stack fa-9x">
                   <img src="img/intro/3_step.png" class="img-responsive" alt="" style="width:60%">
                 </span>
-                <h4 class="service-heading">3. Identifying Energy Infrastructure</h4>
+                <h4 class="service-heading">3. Identify Energy Infrastructure</h4>
                 <p class="text-muted">Finally, the model is tested on new images, where each identified object (bounded
                   by red boxes) was assigned a probability score of belonging to a certain class.</p>
               </div>
@@ -503,7 +503,7 @@
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Expanding to Other Object Image Types</h3>
               <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure7: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
+              <caption><i>Figure 7: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <p class="text-muted">Using building rooftops as a proof-of-concept in our goal to include more diversity in landscape and infrastructure types in training data, we envision creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills and rivers from our rooftop texture bank. With successes applying our model on forests, rivers, carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range of scenes simulating actual landscapes in our target regions.<br>Once we are equipped with the texture bank, we move onto the next step: feeding textures from our synthetic texture bank to the texture substitution algorithm.</p>
@@ -534,16 +534,10 @@
           <hr class="divider light my-4" />
 
           <div class="row">
-            <!-- <div class="col-md-2 my-auto">
-            </div>
-            <div class="col-md-8 my-auto">
-              <p class="text-muted"></p>
-            </div>
-            <div class="col-md-2 my-auto">
-            </div> -->
-
-            <div class="col-md-6 my-auto">
-              <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted
+            
+            <div class="col-md-1 my-auto"></div>
+            <div class="col-md-10 my-auto">
+              <!-- <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted
                 rooftops from source images and generated synthetic textures, we want to substitute these synthesized
                 textures to new target geographies. Figure 3 shows an example of a source satellite image from Vienna.
               </p>
@@ -555,33 +549,42 @@
                 buckets, and when we synthesize the synthetic textures, we also note the size of the building that the
                 texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute
                 onto the target building. This ensures that our final output is as realistic as possible, since we can
-                imagine that small and large buildings can have notable differences in rooftop textures. </p>
+                imagine that small and large buildings can have notable differences in rooftop textures. </p> -->
+                <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 8 shows our texture substitution process. We take a source image, choose a target image, and match rooftop textures based on the sizing of the target rooftops. This can help make our synthetic cities more realistic, which can do a better job of diversifying training data.</p>
             </div>
-            <div class="col-md-6 my-auto">
-              <p class="text-muted">As of now, the rooftops look like solid colors. This result reflects the process by
-                which we are substituting the synthesized textures in. When we substitute in the synthesized textures,
-                we start from the upper left corner of the texture patch and the upper left corner of the target
-                rooftop. Each pixel is then substituted into the corresponding relative pixel location on the rooftop.
-                The quality of the substituted textures is not the best right now, but this was mainly for proof of
-                concept. We can imagine that if we start generating textures of higher resolution and input these into a
-                city generating software, such as CityEngine, we can generate rooftop textures that are more realistic
-                and carry the properties of real rooftops. </p>
-              <p class="text-muted">At this point, we can supplement our real satellite imagery with textured synthetic
-                imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions
-                and create more accurate building maps. As this research progresses, the team will expand this pipeline
-                to other types of infrastructure besides buildings, eventually allowing us to map out entire energy
-                grids around the world.</p>
-            </div>
+            <div class="col-md-1 my-auto"></div>
 
-            <div class="col-md-2 my-auto">
-            </div>
+            <div class="col-md-2 my-auto"></div>
             <div class="col-md-8 my-auto">
               <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
               <caption><i>Figure 8: Rooftop Substitution Pipeline</i></caption>
             </div>
-            <div class="col-md-2 my-auto">
-              <!-- <img src="img/extraction/fake1.png" class="img-responsive" alt="" style="width:100%"> -->
+            <div class="col-md-2 my-auto"></div>
+
+            <div class="col-md-1 my-auto"></div>
+            <div class="col-md-10 my-auto">
+                <p class="text-muted"><br>As shown in Figure 9, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in figure 10.</p>
             </div>
+            <div class="col-md-1 my-auto"></div>
+
+
+            <div class="col-md-6 my-auto">
+              <br>
+              <img src="img/substitution/roofsub.PNG" class="img-responsive" alt="" style="width:80%">
+              <br>
+              <caption><i>Figure 9: Examples of Rooftop Substitutions</i></caption>
+            </div>
+            <div class="col-md-5 my-auto">
+              <img src="img/substitution/process.png" class="img-responsive" alt="" style="width:100%">
+              <caption><i>Figure 10: Texture substitution process</i></caption>
+            </div>
+
+            <div class="col-md-1 my-auto"></div>
+            <div class="col-md-10 my-auto">
+                <p class="text-muted"><br>At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+            </div>
+            <div class="col-md-1 my-auto"></div>
+
           </div>
 
 
@@ -899,6 +902,46 @@
             <p class="text-muted">Mechanical Engineering</p>
           </div>
         </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="bg-light page-section" id="acknowledgement">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Acknowledgement</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-2 text-center"></div>
+        <div class="col-md-8 my-auto">
+          <h3 class="service-heading">This research project was only possible because of the support from the following:</h3>
+          <p><a class="text-muted", href="https://bassconnections.duke.edu">Duke University Bass Connections Program</a></p>
+          <p><a class="text-muted", href="https://energy.duke.edu/research/energy-data">Duke University Energy Initiative’s Energy Data Analytics Lab</a></p>
+          <p><a class="text-muted", href="https://ece.duke.edu">Duke University Pratt School of Engineering Department of Electrical and Computer Engineering</a></p>
+        </div>
+        <div class="col-md-2 my-auto"></div>
+
+        <div class="col-md-2 text-center"></div>
+        <div class="col-md-4 my-auto">
+          <h3 class="service-heading">Project advisors:</h3>
+          <p class="text-muted">Dr. Kyle Bradbury</p>
+          <p class="text-muted">Dr. Leslie Collins</p>
+          <p class="text-muted">Dr. Jordan Malof</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="service-heading">Past work:</h3>
+          <p><a class="text-muted", href="https://bigdata.duke.edu/projects/wider-lens-energy-adapting-deep-learning-techniques-inform-energy-access-decisions">2019 Data+ Team</a></p>
+          <p><a class="text-muted", href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">2018-19 Bass Connections Team</a></p>
+        </div>
+        <div class="col-md-2 my-auto"></div>
+        
       </div>
       <!-- <div class="row">
         <div class="col-lg-8 mx-auto text-center">
