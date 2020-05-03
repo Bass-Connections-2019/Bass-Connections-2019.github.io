@@ -246,9 +246,13 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
-
-              <caption class="text-muted">We are building on last year team’s work and our main goal this year has been to
-                make our model generalize across different geographies. In order to achieve that we need:</caption>
+              <br><br>
+              <p style = "text-align: justify;">The task was to identify transmission lines across the four cities shown.
+                In these plots, each colored precision-recall curve corresponds to a single city, and the black curve model has been trained on all cities. The higher the area under the PR curve, the higher the performance of the model.
+                As we can see from the plots, the USA model performed best in each test case, and the models trained on single cities performed equivalently to the USA model only in the same city and performed poorly in other cities. 
+              <br><br>
+              Source: <i>Mapping electric transmission line infrastructure from aerial imagery with deep learning, Hu, Alexander, Cathcart, Hu, Nair, Zuo, Malof, Collins, Bradbury  (2020)</i>
+              </p>
             </div>
           </div>
 
@@ -268,11 +272,10 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto" style = "text-align: left;">
               <figure>
                 <img src="img/city_scores_table.png" class="img-responsive" alt="" style="width:100%">
-                <figcaption style="text-align: center;">Numbers represent IoU.</figcaption>
               </figure>
-              <caption>Table: <i>Evaluation of models trained on each individual city from the Inria dataset, as well as
+              <caption>Numbers in the table represent Intersection over Union. Higher the IoU, better the model performance. Evaluation of models trained on each individual city from the Inria dataset, as well as
                   a model trained on the entire dataset. The models are then evaluated on each city (columns). Orange cells represent the best model for each
-                  city, while green cells represent best performance out of all models.</i></caption>
+                  city, while green cells represent best performance out of all models.</caption>
             </div>
           </div>
 
@@ -395,7 +398,12 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <h3 class="service-heading">Texture Synthesis Automated Pipeline (TSAP)</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style="text-align: justify;">In order to automate the extraction, synthesis, and substitution of building rooftop
+              <p class="text-muted" style="text-align: justify;">
+                The reason for switching to buildings is because the INRIA Aerial Image Labeling dataset(link) has high resolution satellite imagery of cities with labeled buildings. If we can build models that identify buildings, they can be expanded to identify other types of infrastructure as well.
+
+                Source: <a href="https://project.inria.fr/aerialimagelabeling/">INRIA Dataset</a>
+                <br><br>
+                In order to automate the extraction, synthesis, and substitution of building rooftop
                 textures, we created a pipeline that takes any of the 2500 images of cities in the INRIA dataset,
                 capture the building rooftop texture in each city, then transfer the visual content and style onto a
                 texture patch while maintaining image resolution, and finally, substitute these rooftop textures on top
@@ -435,13 +443,13 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-7 my-auto">
             <figure>
               <img src = "img/how_it_works_roof_extract.png" style="width:100%">
-              <figcaption><i>Figure 1: How roof-extraction works</i></figcaption>
+              <figcaption><i>Figure: How roof-extraction works</i></figcaption>
             </figure>
           </div>
           <div class="col-md-5 my-auto">
             <figure>
               <img src = "img/extr.png" style="width:100%">
-              <figcaption><i>Figure 2: Examples</i></figcaption>
+              <figcaption><i>Figure: Examples</i></figcaption>
             </figure>
           </div>
           </div>
@@ -465,11 +473,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
 
             <div class="col-md-6 my-auto">
               <img src="img/texture/pepper.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 3: What is texture synthesis? </i></caption><br>
+              <caption><i>Figure: What is texture synthesis? </i></caption><br>
               <a href="https://arxiv.org/abs/1603.03417"><caption><i>[Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized Images.]</i></caption></a>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted">Once we have obtained the largest rectangular roof, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the right.</p>
+              <p class="text-muted" style = "text-align: justify;">Once we have obtained the largest rectangular roof patch, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the right.</p>
             </div>
           </div>
 
@@ -482,7 +490,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_pipeline.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 4: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and Synthesized into the Texture Patch on the Right</i></caption>
+              <caption><i>Figure: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and Synthesized into the Texture Patch on the Right</i></caption>
             </div>
             <div class="col-md-2 my-auto">
               <img src="img/texture/texture_process2.gif" class="img-responsive" alt="" style="width:100%">
@@ -494,7 +502,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row">
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_bank_revised.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 5: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
+              <caption><i>Figure: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Step 3: Create Bank of Rooftop Textures</h3>
@@ -508,7 +516,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Expanding to Other Object Image Types</h3>
               <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 6: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
+              <caption><i>Figure: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <p class="text-muted" style="text-align: justify;">Using building rooftops as a proof-of-concept in our goal to include more diversity in landscape and infrastructure types in training data, we envision creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills and rivers from our rooftop texture bank. With successes applying our model on forests, rivers, carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range of scenes simulating actual landscapes in our target regions.<br>
@@ -567,13 +575,13 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-2 my-auto"></div>
             <div class="col-md-8 my-auto">
               <img src="img/substitution/sub.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 7: Rooftop Substitution Pipeline</i></caption>
+              <caption><i>Figure: Rooftop Substitution Pipeline</i></caption>
             </div>
             <div class="col-md-2 my-auto"></div>
 
             <div class="col-md-1 my-auto"></div>
             <div class="col-md-10 my-auto">
-                <p class="text-muted" style="text-align: justify;"><br>As shown in Figure 8, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in figure 9.</p>
+                <p class="text-muted" style="text-align: justify;"><br>As shown in the figure on the left, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in the figure on the right.</p>
             </div>
             <div class="col-md-1 my-auto"></div>
 
@@ -582,11 +590,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <br>
               <img src="img/substitution/roofsub.PNG" class="img-responsive" alt="" style="width:80%">
               <br>
-              <caption><i>Figure 8: Examples of Rooftop Substitutions</i></caption>
+              <caption><i>Figure: Examples of Rooftop Substitutions</i></caption>
             </div>
             <div class="col-md-5 my-auto">
               <img src="img/substitution/process.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 9: Texture substitution process</i></caption>
+              <caption><i>Figure: Texture substitution process</i></caption>
             </div>
                 <p style="text-align: justify;"><br>At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
           </div>
