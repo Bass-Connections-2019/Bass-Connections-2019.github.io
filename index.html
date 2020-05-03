@@ -11,7 +11,7 @@
   <title>A Wider Lens on Energy</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="shortcut icon" type="image/png" href="img/globe.png"/>
+  <link rel="shortcut icon" type="image/png" href="img/globe.png" />
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -74,7 +74,8 @@
         </div>
         <p class="text-white-75 font-weight-light mb-5">Aneesh Gupta, Ayooluwa Balogun, Gaurav Uppal, Jason Wang, Norah
           Tan, Scott Heng On, Winston Yau, Vivek Sahukar</p>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://github.com/Bass-Connections-2019">See Our Github Repository</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://github.com/Bass-Connections-2019">See Our
+          Github Repository</a>
       </div>
     </div>
   </header>
@@ -87,15 +88,21 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Introduction</h2>
           <!-- <h3 class="section-subheading text-muted">&#8226 Project Background. &nbsp &#8226 Our Goal. &nbsp &#8226 -->
-            <!-- Previous Progress. </h3> -->
+          <!-- Previous Progress. </h3> -->
           <hr class="divider light my-4" />
           <div class="row">
-            <div class="col-md-6 my-auto" style = "text-align: left;">
+            <div class="col-md-6 my-auto" style="text-align: left;">
               <h3 class="service-heading">Motivation</h3>
               <p class="text-muted">Access to electricity is one of the most important requisites to economic and
                 societal development. It is associated with decreased maternal mortality, increased education levels,
                 and decreased poverty. <a href="https://nature.berkeley.edu/er100/readings/nclimate2512.pdf"
-                  target="_blank">[P. Alstone, et al. Decentralized energy systems for clean electricity access. ]</a> However, 1 billion people still lack access to electricity. To enable electrification and grid expansion in energy-poor regions, it is crucial to know where the existing infrastructure is. This information can help policymakers and businesses decide on whether to expand the national grid, build a microgrid, or provide direct off-grid solar PV. Current approaches to identifying and mapping energy infrastructure tend to be expensive and time-intensive, consisting of aggregating survey data from the ground level and roughly scaling it across regions. This is where we want to help. </p>
+                  target="_blank">[P. Alstone, et al. Decentralized energy systems for clean electricity access. ]</a>
+                However, 1 billion people still lack access to electricity. To enable electrification and grid expansion
+                in energy-poor regions, it is crucial to know where the existing infrastructure is. This information can
+                help policymakers and businesses decide on whether to expand the national grid, build a microgrid, or
+                provide direct off-grid solar PV. Current approaches to identifying and mapping energy infrastructure
+                tend to be expensive and time-intensive, consisting of aggregating survey data from the ground level and
+                roughly scaling it across regions. This is where we want to help. </p>
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/about/intro_picture.png" class="img-responsive" alt="" style="width:100%">
@@ -135,7 +142,13 @@
               <h3 class="service-heading">Background</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style = "text-align: justify;">For three years, the Duke Energy Data Analytics Lab has worked on developing deep learning models that identify energy infrastructure, with an end goal of generating maps of power grid networks that can aid policymakers in implementing effective electrification strategies. Researchers have already been able to create an object identification model that can ID different types of energy infrastructure, as shown here: <a href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19 Bass Connections Team]</a></p>
+              <p class="text-muted" style="text-align: justify;">For three years, the Duke Energy Data Analytics Lab has
+                worked on developing deep learning models that identify energy infrastructure, with an end goal of
+                generating maps of power grid networks that can aid policymakers in implementing effective
+                electrification strategies. Researchers have already been able to create an object identification model
+                that can ID different types of energy infrastructure, as shown here: <a
+                  href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19
+                  Bass Connections Team]</a></p>
             </div>
 
 
@@ -147,7 +160,8 @@
                   <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
                 </span>
                 <h4 class="service-heading">1. Obtain High-Resolution Satellite Imagery</h4>
-                <p class="text-muted" style = "text-align: left;">The high-resolution satellite imagery displays various infrastructure such as
+                <p class="text-muted" style="text-align: left;">The high-resolution satellite imagery displays various
+                  infrastructure such as
                   building, car, tower clearly and visibly. Using Low resolution images won’t give higher prediction
                   accuracy.</p>
               </div>
@@ -156,7 +170,8 @@
                   <img src="img/intro/2_step.png" class="img-responsive" alt="" style="width:60%">
                 </span>
                 <h4 class="service-heading">2. Detect Pixels with Objects of Interest</h4>
-                <p class="text-muted" style = "text-align: left;">We use the model to detect different objects in the training dataset such as
+                <p class="text-muted" style="text-align: left;">We use the model to detect different objects in the
+                  training dataset such as
                   energy infrastructure such as transmission lines and towers in addition to cars, buildings too. The
                   identified objects are bounded by blue boxes.</p>
               </div>
@@ -165,7 +180,8 @@
                   <img src="img/intro/3_step.png" class="img-responsive" alt="" style="width:60%">
                 </span>
                 <h4 class="service-heading">3. Identify Energy Infrastructure</h4>
-                <p class="text-muted" style = "text-align: left;">Finally, the model is tested on new images, where each identified object (bounded
+                <p class="text-muted" style="text-align: left;">Finally, the model is tested on new images, where each
+                  identified object (bounded
                   by red boxes) was assigned a probability score of belonging to a certain class.</p>
               </div>
 
@@ -185,20 +201,28 @@
           <div class="row">
 
             <div class="col-md-6 my-auto">
-              <h3 class="service-heading">Our Main Research Goal is to Increase Model Adaptability Across Geographies</h3>
+              <h3 class="service-heading">Our Main Research Goal is to Increase Model Adaptability Across Geographies
+              </h3>
             </div>
 
             <div class="col-md-6 my-auto">
 
-              <p class="text-muted" style = "text-align: justify;"><strong>Image Segmentation</strong> is a deep
+              <p class="text-muted" style="text-align: justify;"><strong>Image Segmentation</strong> is a deep
                 learning model which can segment images and identify target objects at scale by assigning each pixel to
-                a probability. Each Satellite image then can be simplified and partitioned into different segments based on object features, such as color, texture, and gradient, and offer insights on the model's generalizability across different geographic domains. We chose <strong>Models for Remote Sensing (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an encoder-decoder model to perform the segmentation. Then, we need:
-                <ul class="text-muted"style = "text-align: left;">
+                a probability. Each Satellite image then can be simplified and partitioned into different segments based
+                on object features, such as color, texture, and gradient, and offer insights on the model's
+                generalizability across different geographic domains. We chose <strong>Models for Remote Sensing
+                  (MRS)</strong> <a href="https://hal.inria.fr/hal-01767807/document">[B. Huang et al. Large-Scale
+                  Semantic Classification: Outcome of the First Year of Inria Aerial Image Labeling Benchmark.]</a>, an
+                encoder-decoder model to perform the segmentation. Then, we need:
+                <ul class="text-muted" style="text-align: left;">
                   <li>Labelled satellite image where each object is identified in the training dataset.</li>
-                  <li>After we apply the neural network, we get an output segmented image where the white pixels are the object of interest (such as buildings) that the model has identified and the black pixels are the area which do not have infrastructure.</li>
+                  <li>After we apply the neural network, we get an output segmented image where the white pixels are the
+                    object of interest (such as buildings) that the model has identified and the black pixels are the
+                    area which do not have infrastructure.</li>
                 </ul>
               </p>
-              
+
 
               <!-- <p class="text-muted">We are building on last year team’s work and our main goal this year has been to
                 make our model generalize across different geographies. <strong>Image Segmentation</strong> is a deep
@@ -208,7 +232,8 @@
                 geography-by-geography basis on the INRIA dataset1, which contains urban satellite imagery for different
                 cities across the world.</p> -->
             </div>
-            <div class="col-md-12 my-auto"><img src="img/intro/11_step.png" class="img-responsive" alt="" style="width:80%"></div>
+            <div class="col-md-12 my-auto"><img src="img/intro/11_step.png" class="img-responsive" alt=""
+                style="width:80%"></div>
           </div>
 
           <hr class="divider light my-4" />
@@ -218,24 +243,34 @@
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/intro/accuracy_metric.png" class="img-responsive" alt="" style="width:100%">
-              <caption>Figure source: <a href = "https://datascience.stackexchange.com/questions/25119/how-to-calculate-map-for-detection-task-for-the-pascal-voc-challenge">DataScience StackExchange</a></caption>
-              <p style = "text-align: left;">The output of the model is the predicted bounding boxes around the object of
-                interest - in our case, buildings. In order to apply Intersection over Union to evaluate an (arbitrary) object detector we need:
-                <ul style = "text-align: left;">
-                  <li>The <i>ground-truth bounding boxes</i> (i.e., the hand labeled bounding boxes from the testing set that
+              <caption>Figure source: <a
+                  href="https://datascience.stackexchange.com/questions/25119/how-to-calculate-map-for-detection-task-for-the-pascal-voc-challenge">DataScience
+                  StackExchange</a></caption>
+              <p style="text-align: left;">The output of the model is the predicted bounding boxes around the object of
+                interest - in our case, buildings. In order to apply Intersection over Union to evaluate an (arbitrary)
+                object detector we need:
+                <ul style="text-align: left;">
+                  <li>The <i>ground-truth bounding boxes</i> (i.e., the hand labeled bounding boxes from the testing set
+                    that
                     specify where in the image our object is).</li>
                   <li>The <i>predicted bounding boxes</i> from our model.</li>
                 </ul>
               </p>
-              <p style = "text-align: left;">
-                <i>Precision</i> measures how accurate our predictions are. i.e. the percentage of our predictions are correct.
+              <p style="text-align: left;">
+                <i>Precision</i> measures how accurate our predictions are. i.e. the percentage of our predictions are
+                correct.
                 <br>
-                <i>Recall</i> measures how accurately we can find all the positives. 
+                <i>Recall</i> measures how accurately we can find all the positives.
                 <br>
-              <i>Area of union</i> is the area encompassed by both the predicted bounding box and the ground-truth bounding box.<br>
-            <i>Area of overlap</i> is the common area between the predicted bounding box and the ground-truth bounding box.<br><br>
-Dividing the area of overlap by the area of union yields our final score — the Intersection over Union.<br><br>
-A detailed blogpost explaining the accuracy metrics with an example can be found <a href ="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/" target="_blank">here</a>.
+                <i>Area of union</i> is the area encompassed by both the predicted bounding box and the ground-truth
+                bounding box.<br>
+                <i>Area of overlap</i> is the common area between the predicted bounding box and the ground-truth
+                bounding box.<br><br>
+                Dividing the area of overlap by the area of union yields our final score — the Intersection over
+                Union.<br><br>
+                A detailed blogpost explaining the accuracy metrics with an example can be found <a
+                  href="https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/"
+                  target="_blank">here</a>.
 
               </p>
             </div>
@@ -249,21 +284,26 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto">
               <img src="img/intro/last_year.png" class="img-responsive" alt="" style="width:100%">
               <br><br>
-              <p style = "text-align: justify;">The task was to identify transmission lines across the four cities shown.
-                In these plots, each colored precision-recall curve corresponds to a single city, and the black curve model has been trained on all cities. The higher the area under the PR curve, the higher the performance of the model.
-                As we can see from the plots, the USA model performed best in each test case, and the models trained on single cities performed equivalently to the USA model only in the same city and performed poorly in other cities. 
-              <br><br>
-              Source: <i>Mapping electric transmission line infrastructure from aerial imagery with deep learning, Hu, Alexander, Cathcart, Hu, Nair, Zuo, Malof, Collins, Bradbury  (2020)</i>
+              <p style="text-align: justify;">The task was to identify transmission lines across the four cities shown.
+                In these plots, each colored precision-recall curve corresponds to a single city, and the black curve
+                model has been trained on all cities. The higher the area under the PR curve, the higher the performance
+                of the model.
+                As we can see from the plots, the USA model performed best in each test case, and the models trained on
+                single cities performed equivalently to the USA model only in the same city and performed poorly in
+                other cities.
+                <br><br>
+                Source: <i>Mapping electric transmission line infrastructure from aerial imagery with deep learning, Hu,
+                  Alexander, Cathcart, Hu, Nair, Zuo, Malof, Collins, Bradbury (2020)</i>
               </p>
             </div>
           </div>
 
           <hr class="divider light my-4" />
 
-          <div class="row" style = "text-align: left;">
+          <div class="row" style="text-align: left;">
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Cross-Domain Accuracy</h3>
-              <p >As shown in the table, the most accurate model for a given city is the model that is
+              <p>As shown in the table, the most accurate model for a given city is the model that is
                 trained on that same city, and models trained on a single city don’t necessarily generalize well to the
                 other cities. Furthermore, we found that training a model on all of the cities results in higher test
                 accuracies across the board.
@@ -271,13 +311,15 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
                 Visualize the model’s representation of the current training domain(Goal 2).
                 Provide ways to diversify this training domain (Goal 3).</p>
             </div>
-            <div class="col-md-6 my-auto" style = "text-align: left;">
+            <div class="col-md-6 my-auto" style="text-align: left;">
               <figure>
                 <img src="img/city_scores_table.png" class="img-responsive" alt="" style="width:100%">
               </figure>
-              <caption>Numbers in the table represent Intersection over Union. Higher the IoU, better the model performance. Evaluation of models trained on each individual city from the Inria dataset, as well as
-                  a model trained on the entire dataset. The models are then evaluated on each city (columns). Orange cells represent the best model for each
-                  city, while green cells represent best performance out of all models.</caption>
+              <caption>Numbers in the table represent Intersection over Union. Higher the IoU, better the model
+                performance. Evaluation of models trained on each individual city from the Inria dataset, as well as
+                a model trained on the entire dataset. The models are then evaluated on each city (columns). Orange
+                cells represent the best model for each
+                city, while green cells represent best performance out of all models.</caption>
             </div>
           </div>
 
@@ -299,12 +341,20 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-8 my-auto">
               <h3 class="service-heading">Each Geography is Incredibly Different</h3>
               <img src="img/4_domains.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure 2: Images are taken for each city from the Google Earth with camera height at 500 m.</i></caption>
+              <caption><i>Figure 2: Images are taken for each city from the Google Earth with camera height at 500
+                  m.</i></caption>
             </div>
             <div class="col-md-4 my-auto">
-              <p class="text-muted" style = "text-align: justify;"> As seen in the two object detection tasks, the model accuracy increases if the model is trained on different cities. The geography and building types of each city is enormously different. The reason for improvement in accuracy is that the model is able to learn features of the different cities. 
+              <p class="text-muted" style="text-align: justify;"> As seen in the two object detection tasks, the model
+                accuracy increases if the model is trained on different cities. The geography and building types of each
+                city is enormously different. The reason for improvement in accuracy is that the model is able to learn
+                features of the different cities.
                 <br><br>
-                The buildings in Austin and Kitsap are widely spaced, whereas the buildings in Chicago and Vienna are tightly packed. The Kitsap has more green cover and the color of cover is also more green compared to all other cities. The texture of Vienna buildings has a peculiar reddish tone. Due to the difference in the physical features of each city, the training dataset should be representative of all these different features for the model accuracy to improve significantly.</p>
+                The buildings in Austin and Kitsap are widely spaced, whereas the buildings in Chicago and Vienna are
+                tightly packed. The Kitsap has more green cover and the color of cover is also more green compared to
+                all other cities. The texture of Vienna buildings has a peculiar reddish tone. Due to the difference in
+                the physical features of each city, the training dataset should be representative of all these different
+                features for the model accuracy to improve significantly.</p>
             </div>
           </div>
           <!-- <hr class="divider light my-4"/> -->
@@ -348,10 +398,13 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <h3 class="service-heading">Motivation Behind Synthetic Data</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style = "text-align: justify;">Synthetic imagery can thus help us <b>diversify</b> our training data, by adding more examples of different, representative satellite images.
-                Diversified training data, such as the "All Cities" example we see in the table above, can help us overcome the geographic differences, and build robust models, agnostic to geography.
-              <br><br>
-              Another great thing about synthetic data is that it removes the need for hand-annotation and manual labelling.
+              <p class="text-muted" style="text-align: justify;">Synthetic imagery can thus help us <b>diversify</b> our
+                training data, by adding more examples of different, representative satellite images.
+                Diversified training data, such as the "All Cities" example we see in the table above, can help us
+                overcome the geographic differences, and build robust models, agnostic to geography.
+                <br><br>
+                Another great thing about synthetic data is that it removes the need for hand-annotation and manual
+                labelling.
               </p>
             </div>
             <div class="col-md-2 my-auto">
@@ -377,8 +430,10 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <h3 class="service-heading">Towards Realistic Textures</h3>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style="text-align: left;">However, synthetic imagery is visibly different in its textures and styles from real
-                satellite imagery. We can see from the three synthetic satellite images above, that they do not have enough resemblance to real life buildings - there is something "off" and different about them.
+              <p class="text-muted" style="text-align: left;">However, synthetic imagery is visibly different in its
+                textures and styles from real
+                satellite imagery. We can see from the three synthetic satellite images above, that they do not have
+                enough resemblance to real life buildings - there is something "off" and different about them.
                 <br><br>
                 To make them more realistic, we plan on <b>transferring textures</b> from real satellite imagery to
                 synthetic imagery:</p>
@@ -396,12 +451,14 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <hr class="divider light my-4" />
 
           <div class="row">
-            <div class="col-md-6 my-auto" id = "texture">
+            <div class="col-md-6 my-auto" id="texture">
               <h3 class="service-heading">Texture Synthesis Automated Pipeline (TSAP)</h3>
             </div>
             <div class="col-md-6 my-auto">
               <p class="text-muted" style="text-align: justify;">
-                The reason for switching to buildings is because the INRIA Aerial Image Labeling dataset(link) has high resolution satellite imagery of cities with labeled buildings. If we can build models that identify buildings, they can be expanded to identify other types of infrastructure as well.
+                The reason for switching to buildings is because the INRIA Aerial Image Labeling dataset(link) has high
+                resolution satellite imagery of cities with labeled buildings. If we can build models that identify
+                buildings, they can be expanded to identify other types of infrastructure as well.
 
                 Source: <a href="https://project.inria.fr/aerialimagelabeling/">INRIA Dataset</a>
                 <br><br>
@@ -436,28 +493,29 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <ol class="text-muted" style="text-align: justify;">
                 <li>First, we go through the satellite image and get only the buildings</li>
                 <li>Upon isolating each individual building, a bounding box is made containing the rooftop.</li>
-                <li>The process we made <i>automatically crops</i> a rectangle out of the rooftop (for feeding into synthetic
+                <li>The process we made <i>automatically crops</i> a rectangle out of the rooftop (for feeding into
+                  synthetic
                   generation).</li>
-              </ul>
+                </ul>
             </div>
           </div>
-          <div class = "row" style="align-items: center;">
+          <div class="row" style="align-items: center;">
             <div class="col-md-7 my-auto">
-            <figure>
-              <img src = "img/how_it_works_roof_extract.png" style="width:100%">
-              <figcaption><i>Figure: How roof-extraction works</i></figcaption>
-            </figure>
-          </div>
-          <div class="col-md-5 my-auto">
-            <figure>
-              <img src = "img/extr.png" style="width:100%">
-              <figcaption><i>Figure: Examples</i></figcaption>
-            </figure>
-          </div>
+              <figure>
+                <img src="img/how_it_works_roof_extract.png" style="width:100%">
+                <figcaption><i>Figure: How roof-extraction works</i></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-5 my-auto">
+              <figure>
+                <img src="img/extr.png" style="width:100%">
+                <figcaption><i>Figure: Examples</i></figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
   </section>
 
   <!-- Texture Synthesis section-->
@@ -476,10 +534,17 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto">
               <img src="img/texture/pepper.png" class="img-responsive" alt="" style="width:100%">
               <caption><i>Figure: What is texture synthesis? </i></caption><br>
-              <a href="https://arxiv.org/abs/1603.03417"><caption><i>[Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized Images.]</i></caption></a>
+              <a href="https://arxiv.org/abs/1603.03417">
+                <caption><i>[Dmitry Ulyanov, Texture Networks: Feed-forward Synthesis of Textures and Stylized
+                    Images.]</i></caption>
+              </a>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style = "text-align: justify;">Once we have obtained the largest rectangular roof patch, we want to be able to transfer the visual content and style of this roof texture to buildings in any other image. Using a picture of red peppers shown above as an example, the model should be able to take a snapshot of the red peppers’ color, shapes, background, and other characteristics and reconstitute them in a new image, shown on the right.</p>
+              <p class="text-muted" style="text-align: justify;">Once we have obtained the largest rectangular roof
+                patch, we want to be able to transfer the visual content and style of this roof texture to buildings in
+                any other image. Using a picture of red peppers shown above as an example, the model should be able to
+                take a snapshot of the red peppers’ color, shapes, background, and other characteristics and
+                reconstitute them in a new image, shown on the right.</p>
             </div>
           </div>
 
@@ -488,11 +553,14 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row">
             <div class="col-md-4 my-auto">
               <h3 class="service-heading">Step 2: Texture Synthesis</h3>
-              <p class="text-muted" style="text-align: justify;">In our situation, we accomplished this by applying a feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure, and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
+              <p class="text-muted" style="text-align: justify;">In our situation, we accomplished this by applying a
+                feed-forward convolutional neural network model that recreates the color, gradient, rooftop structure,
+                and more in a new texture patch, as seen below with the example of a roof of a building in Austin.</p>
             </div>
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_pipeline.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and Synthesized into the Texture Patch on the Right</i></caption>
+              <caption><i>Figure: Our Process: Extracted Image of a Rooftop in Austin is Fed into the Model and
+                  Synthesized into the Texture Patch on the Right</i></caption>
             </div>
             <div class="col-md-2 my-auto">
               <img src="img/texture/texture_process2.gif" class="img-responsive" alt="" style="width:100%">
@@ -504,11 +572,15 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <div class="row">
             <div class="col-md-6 my-auto">
               <img src="img/texture/texture_bank_revised.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture Patches Shown on the Right.</i></caption>
+              <caption><i>Figure: We Sourced 4 Rooftop Textures and Reconstituted Each of Them in 4 Different Texture
+                  Patches Shown on the Right.</i></caption>
             </div>
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Step 3: Create Bank of Rooftop Textures</h3>
-              <p class="text-muted" style="text-align: justify;">We then apply this model on unique rooftops for all 2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city from which they were extracted. This way, we have a bank of textures to draw from when we create synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
+              <p class="text-muted" style="text-align: justify;">We then apply this model on unique rooftops for all
+                2500 images of 5 cities in the INRIA dataset, and create a bank of rooftop textures arranged by the city
+                from which they were extracted. This way, we have a bank of textures to draw from when we create
+                synthetic imagery, as seen in the example below with the city of Vienna, Austria.</p>
             </div>
           </div>
 
@@ -518,13 +590,20 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
             <div class="col-md-6 my-auto">
               <h3 class="service-heading">Expanding to Other Object Image Types</h3>
               <img src="img/texture/expand.png" class="img-responsive" alt="" style="width:100%">
-              <caption><i>Figure: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2. rivers; 3. carparks; 4. farms)</i></caption>
+              <caption><i>Figure: Next Step - Including Landscapes in Our Synthetic Texture Bank. (1. forests; 2.
+                  rivers; 3. carparks; 4. farms)</i></caption>
             </div>
             <div class="col-md-6 my-auto">
-              <p class="text-muted" style="text-align: justify;">Using building rooftops as a proof-of-concept in our goal to include more diversity in landscape and infrastructure types in training data, we envision creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills and rivers from our rooftop texture bank. With successes applying our model on forests, rivers, carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range of scenes simulating actual landscapes in our target regions.<br>
+              <p class="text-muted" style="text-align: justify;">Using building rooftops as a proof-of-concept in our
+                goal to include more diversity in landscape and infrastructure types in training data, we envision
+                creating a whole scene or a simulated environment with buildings and landscapes such as rolling hills
+                and rivers from our rooftop texture bank. With successes applying our model on forests, rivers,
+                carparks, and farm fields, we are one step closer to truly being geography agnostic and creating a range
+                of scenes simulating actual landscapes in our target regions.<br>
                 <br>
-                Once we are equipped with the texture bank, we move onto the next step: feeding textures from our synthetic texture bank to the texture substitution algorithm.</p>
-                <!-- Rooftops are just the first step. We are able to generate a bank of multiple object image types for more robust substitution, some examples (on the left) include:
+                Once we are equipped with the texture bank, we move onto the next step: feeding textures from our
+                synthetic texture bank to the texture substitution algorithm.</p>
+              <!-- Rooftops are just the first step. We are able to generate a bank of multiple object image types for more robust substitution, some examples (on the left) include:
               <br>1: Forests
               <br>2: Rivers
               <br>3: Car Parks
@@ -551,7 +630,7 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
           <hr class="divider light my-4" />
 
           <div class="row">
-            
+
             <div class="col-md-1 my-auto"></div>
             <div class="col-md-10 my-auto">
               <!-- <p class="text-muted">The last part of our pipeline is texture substitution. Now that we have extracted
@@ -567,10 +646,14 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
                 texture was synthesized from, so we are able to find a synthetic texture of similar size to substitute
                 onto the target building. This ensures that our final output is as realistic as possible, since we can
                 imagine that small and large buildings can have notable differences in rooftop textures. </p> -->
-                <p class="text-muted" style="text-align: justify;">
-                  The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source images and generated synthetic textures, we want to substitute these synthesized textures to new target geographies. Figure 8 shows our texture substitution process. 
-                  <br>
-                  We take a <b>source image, choose a target image, and match rooftop textures</b> based on the sizing of the target rooftops. This can help make our synthetic cities more realistic, which can do a better job of diversifying training data.</p>
+              <p class="text-muted" style="text-align: justify;">
+                The last part of our pipeline is texture substitution. Now that we have extracted rooftops from source
+                images and generated synthetic textures, we want to substitute these synthesized textures to new target
+                geographies. Figure 8 shows our texture substitution process.
+                <br>
+                We take a <b>source image, choose a target image, and match rooftop textures</b> based on the sizing of
+                the target rooftops. This can help make our synthetic cities more realistic, which can do a better job
+                of diversifying training data.</p>
             </div>
             <div class="col-md-1 my-auto"></div>
 
@@ -583,7 +666,9 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
 
             <div class="col-md-1 my-auto"></div>
             <div class="col-md-10 my-auto">
-                <p class="text-muted" style="text-align: justify;"><br>As shown in the figure on the left, the rooftops are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities. This is the process laid out in the figure on the right.</p>
+              <p class="text-muted" style="text-align: justify;"><br>As shown in the figure on the left, the rooftops
+                are flat, solid colors. However, they can provide the basis of realistic, textured synthetic cities.
+                This is the process laid out in the figure on the right.</p>
             </div>
             <div class="col-md-1 my-auto"></div>
 
@@ -598,7 +683,11 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
               <img src="img/substitution/process.png" class="img-responsive" alt="" style="width:100%">
               <caption><i>Figure: Texture substitution process</i></caption>
             </div>
-                <p style="text-align: justify;"><br>At this point, we can supplement our real satellite imagery with textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly represent new regions and create more accurate building maps. As this research progresses, the team will expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out entire energy grids around the world.</p>
+            <p style="text-align: justify;"><br>At this point, we can supplement our real satellite imagery with
+              textured synthetic imagery, where the rooftops have been replaced. This will allow us to convincingly
+              represent new regions and create more accurate building maps. As this research progresses, the team will
+              expand this pipeline to other types of infrastructure besides buildings, eventually allowing us to map out
+              entire energy grids around the world.</p>
           </div>
         </div>
       </div>
@@ -606,37 +695,71 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
 
 
   <!-- CONCLUSION-->
-  <section class="page-section" id="roof-substitution">
+  <section class="page-section" id = "conclusion">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">CONCLUSION</h2>
           <!-- <h3 class="section-subheading text-muted">&#8226 Previous Progress. &nbsp &#8226 Model Iterative Process.
             &nbsp &#8226 Cross-Domain Performance. &nbsp &#8226 Geographies differences.</h3> -->
-
           <hr class="divider light my-4" />
-
           <div class="row">
-            
             <div class="col-md-1 my-auto"></div>
             <div class="col-md-10 my-auto">
-              <!-- <p class="text-muted">Our team focus has been to create a geographic agnostic model to identify energy 
-                infrastructure in satellite images. Existing model’s accuracy was decreased significantly due to lack of diversity 
-                in training data of satellite images. We need synthetic images to make training datasets more diverse and more 
-                representative of a broader range of geographies. 
-              </p> 
-              <p class="text-muted style="text-align: justify;">As a proof of concept, we have worked on generating synthetic rooftops in satellite images. 
-                We extracted building rooftops from images in the INRIA dataset, synthesized textures characteristic of these rooftops, 
-                and substituted them atop buildings in other images, which gave us satellite images with synthetic rooftops of our desired texture.  </p> 
-              <p class="text-muted" style="text-align: justify;">Our final output consists of a bank of textures of building rooftops from different cities, 
-                along with several examples of applying these textures onto simulated urban environments generated by Cityengine (a 3-D modelling software) 
+              <p style="text-align: justify;">Our team focus has been to create a geographic agnostic model to identify energy
+                infrastructure in satellite images. Existing model’s accuracy was decreased significantly due to lack of
+                diversity
+                in training data of satellite images. We need synthetic images to make training datasets more diverse
+                and more
+                representative of a broader range of geographies.
+              </p>
+              <p style="text-align: justify;">As a proof of concept, we have worked on generating
+                synthetic rooftops in satellite images.
+                We extracted building rooftops from images in the INRIA dataset, synthesized textures characteristic of
+                these rooftops,
+                and substituted them atop buildings in other images, which gave us satellite images with synthetic
+                rooftops of our desired texture. </p>
+              <p style="text-align: justify;">Our final output consists of a bank of textures of
+                building rooftops from different cities,
+                along with several examples of applying these textures onto simulated urban environments generated by
+                <b>CityEngine</b> (a 3-D modelling software)
                 to make synthetic images of cities that capture unique features from different geographies.
-                </div>
-            <div class="col-md-1 my-auto"></div>
             </div>
-      
+            <div class="col-md-1 my-auto"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      
+  <!-- NEXT STEPS-->
+  <section class="page-section" id = "next-steps">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Future Steps</h2>
+          <hr class="divider light my-4" />
+          <div class="row">
+            <div class = "col-md-6 my-auto">
+              <ol style = "text-align: justify;">
+                <li>Perform semantic segmentation on our mixed dataset with both satellite imagery and <i>realistic</i> synthetic cities, and compare the results.</li><br>
+                <li>Share our work with future teams on our <a href ="https://github.com/Bass-Connections-2019">Github Repository</a></li><br>
+                <li>Generate database of “synthetic cities” for researchers to make their training data more diverse.</li><br>
+                <li>This project can help inform companies and government on accurate estimates of locations with or without existing energy infrastructure. This, in turn, can help them devise strategies on grid expansion and maintenance.</li>
+              </ol>
+            </div>
+            <div class = "col-md-6 my-auto">
+              <center>
+              <figure>
+              <img src = "img/potential_applications.png" class="img-responsive" alt="" style="width:100%">
+              <figcaption> Potential Applications</figcaption>
+              </figure>
+            </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Services -->
@@ -969,10 +1092,14 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
       <div class="row justify-content-center">
         <div class="col-md-2 text-center"></div>
         <div class="col-md-8 my-auto">
-          <h3 class="service-heading">This research project was only possible because of the support from the following:</h3>
-          <p><a class="text-muted", href="https://bassconnections.duke.edu">Duke University Bass Connections Program</a></p>
-          <p><a class="text-muted", href="https://energy.duke.edu/research/energy-data">Duke University Energy Initiative’s Energy Data Analytics Lab</a></p>
-          <p><a class="text-muted", href="https://ece.duke.edu">Duke University Pratt School of Engineering Department of Electrical and Computer Engineering</a></p>
+          <h3 class="service-heading">This research project was only possible because of the support from the following:
+          </h3>
+          <p><a class="text-muted" , href="https://bassconnections.duke.edu">Duke University Bass Connections
+              Program</a></p>
+          <p><a class="text-muted" , href="https://energy.duke.edu/research/energy-data">Duke University Energy
+              Initiative’s Energy Data Analytics Lab</a></p>
+          <p><a class="text-muted" , href="https://ece.duke.edu">Duke University Pratt School of Engineering Department
+              of Electrical and Computer Engineering</a></p>
         </div>
         <div class="col-md-2 my-auto"></div>
 
@@ -985,11 +1112,15 @@ A detailed blogpost explaining the accuracy metrics with an example can be found
         </div>
         <div class="col-md-4">
           <h3 class="service-heading">Past work:</h3>
-          <p><a class="text-muted", href="https://bigdata.duke.edu/projects/wider-lens-energy-adapting-deep-learning-techniques-inform-energy-access-decisions">2019 Data+ Team</a></p>
-          <p><a class="text-muted", href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">2018-19 Bass Connections Team</a></p>
+          <p><a class="text-muted" ,
+              href="https://bigdata.duke.edu/projects/wider-lens-energy-adapting-deep-learning-techniques-inform-energy-access-decisions">2019
+              Data+ Team</a></p>
+          <p><a class="text-muted" ,
+              href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">2018-19
+              Bass Connections Team</a></p>
         </div>
         <div class="col-md-2 my-auto"></div>
-        
+
       </div>
       <!-- <div class="row">
         <div class="col-lg-8 mx-auto text-center">
